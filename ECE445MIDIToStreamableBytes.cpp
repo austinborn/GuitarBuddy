@@ -16,6 +16,47 @@ MTrk <length of track data>
 <event> = <MIDI event> | <sysex event> | <meta-event>
 */
 
+#include <iostream>
+#include <fstream>
+#include <chrono>
+//#include <cstring>
+//#include <cstddef>
+
+using namespace std;
+
+#define     BYTE_SIZE       8
+
+int main(){
+    //Initializations
+    int next_buffer_size = 4;
+    char byte_buffer [4];
+
+    //Open file
+    ifstream infile(".\SayItAintSo.mid");
+
+    //Get file length
+    infile.seekg(0, infile.end);
+    int file_length = infile.tellg();
+    infile.seekg(0, infile.beg);
+
+    int bytes_read = 0;
+    while(bytes_read < file_length){
+        for(int i = 0; i < next_buffer_size; i++){
+            infile.read(&(byte_buffer[i]), BYTE_SIZE);
+        }
+
+        for(int j = 0; j < next_buffer_size; j++){
+            cout << byte_buffer[j] << " ";
+        }
+        cout << endl;
+
+        next_buffer_size = 1;
+        _sleep(1000);
+    }
+
+    return 0;
+}
+
 //Check if MThd or MTrk - first 32 bits
 //If MThd, do head stuff
 //If MTrk, do track stuff
@@ -44,3 +85,7 @@ MTrk <length of track data>
 //While there are bits remaining:
 // First X bits: delta-time (amount of time to pass before the following event)
 //
+
+
+
+// Sparse coding of LED array assignments
