@@ -1,24 +1,32 @@
-// ECE 445 Senior Design - MIDI to Streamable byte format
+/* MIDI to Streamable byte format
+ *
+ * By Austin Born
+ * 
+ * C++ program to convert notes in MIDI files into a
+ * compressed byte map format to send to the ESP32.
+ * The byte map will contain basic header information on song name,
+ * tempo, and then a sequence of frames for the entire LED array.
+ * Each byte in a frame represents one fret of the guitar, so a 
+ * single frame will have 10 bytes of data. If there are roughly
+ * 32 frames per second, then the byte map for a 5-minute song
+ * will be roughly 100 kB. 
+ */
 
 /*
-To Run in GuitarBuddy directory:
-make clean
-make
-./MIDIToBytes "songname.mid" "songname.csv"
-Format:
-MThd <length of header data>
-<header data>
-MTrk <length of track data>
-<track data>
-...
+ * Curent challenges:
+ * - How to determine playable notes ad chords for a song.
+ * - How to save the bytes in a compressed binary file format.
+ * - How to choose the frame for a note to begin.
+ * - Fixing the timings for notes based on the ticks for a note
+ * - Fix make clean for make file
+ */
 
-<Header Chunk> = <type><length><format><ntrks><division>
-
-<Track Chunk> = <type><length><MTrk event>+...
-
-<MTrk event> = <delta-time><event>
-
-<event> = <MIDI event> | <sysex event> | <meta-event>
+/* About the MIDI Format:
+ * Format:
+ * <Header Chunk> = <MThd><length><format><ntrks><division>
+ * <Track Chunk> = <MTrk><length><MTrk event>+...
+ * <MTrk event> = <delta-time><event>
+ * <event> = <MIDI event> | <sysex event> | <meta-event>
 */
 
 #include <unistd.h>

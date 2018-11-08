@@ -12,12 +12,11 @@ Requires g++ compiiler to make the C++ program in the MIDI conversion program. R
 
 ## Running the tests
 
-To run the MIDI conversion program, follow these instructions:
-
-1. 
+To run the MIDI conversion program, follow these instructions in the MIDI_to_Binary_Conversion directory:
 
 ```
-Required code...
+make
+./MIDIToBytes "songname.mid" "songname.csv"
 ```
 
 ## Authors

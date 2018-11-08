@@ -9,6 +9,12 @@ be used largely to send data to the ESP32 and confirm that the data
 has been properly saved on the ESP32.
 '''
 
+'''
+Current challenges:
+- How to find the binary file to transmit
+- How to send data over a socket
+'''
+
 import time
 import serial
 

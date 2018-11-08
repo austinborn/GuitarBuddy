@@ -10,6 +10,15 @@
  * and shows the functionality of SerialBT.
  */
 
+ /*
+  * Current challenges:
+  * - How to get ESP32 to listen to port from computer
+  * - How to save data to large section of memory in ESP32
+  * - How to interface with user input buttons on device
+  * - How to interface with LED array
+  * - How to access data in time with music
+  */
+
 #include "BluetoothSerial.h"
 
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
