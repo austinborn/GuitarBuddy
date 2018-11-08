@@ -27,6 +27,7 @@ MTrk <length of track data>
 #include <iostream>
 #include <queue>
 #include <string>
+#include <ctime>
 #include "MIDIToBytes.h"
 
 using namespace std;
@@ -42,6 +43,7 @@ int main(int argc, char** argv){
     //Initializations
     char buf [BUFFER_SIZE];
     int i = 0;
+    clock_t begin = clock();
 
     //Open MIDI file
     fstream infile;
@@ -111,7 +113,7 @@ int main(int argc, char** argv){
 
         //Increment track number
         track_num += 1;
-        outfile << endl << "Start of track " <<track_num << endl;
+        outfile << endl << "Start of track " <<track_num << " at Byte " << file_length - bytes_left << endl;
 
         //Get "MTrk" but do nothing with it
         readFromFile(infile, buf, 4, bytes_left);
@@ -120,7 +122,7 @@ int main(int argc, char** argv){
         trk_length = 0;
         readFromFile(infile, buf, 4, bytes_left);
         for (int i = 0; i < 4; i++)
-            trk_length = (trk_length << 8) + (unsigned char)buf[i];
+            trk_length = (trk_length << 8) + (buf[i] & 0x00FF);
         outfile << "Track length: " << trk_length << endl;
 
         //Initialize MIDI Event variables
@@ -322,6 +324,8 @@ int main(int argc, char** argv){
     //Close files
     infile.close();
     outfile.close();
+    clock_t end = clock();
+    cout << std::fixed << "Total elapsed time: " <<  double(end - begin) / CLOCKS_PER_SEC << " seconds" << endl;
     return 0;
 }
 

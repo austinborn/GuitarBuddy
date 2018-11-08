@@ -5,4 +5,4 @@ make: MIDIToBytes.o
 	$(CC) -o MIDIToBytes MIDIToBytes.o
 
 clean:
-	rm *.o MIDIToBytes.exe
+	rm *.o ./MIDIToBytes.exe
