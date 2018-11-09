@@ -1,0 +1,37 @@
+File format - 1
+# of Tracks - 3
+Ticks/quarter note - 0
+
+Start of track 1
+Track length: 19
+0: Tempo to 460299 usec/quarter note
+0: Time Signature event
+
+Start of track 2
+Track length: 3983
+20: On, D4
+20: On, G4
+33: Off, D4
+33: Off, G4
+33: On, F4
+33: On, A#4
+46: Off, F4
+46: Off, A#4
+47: On, C4
+47: On, G4
+60: Off, C4
+60: Off, G4
+60: On, D4
+60: On, G4
+73: Off, D4
+73: Off, G4
+74: On, F4
+74: On, A#4
+87: Off, F4
+87: Off, A#4
+87: On, C#4
+87: On, G#4
+100: Off, C#4
+100: Off, G#4
+100: On, C4
+100: On, G4
