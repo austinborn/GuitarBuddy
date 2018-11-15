@@ -1,0 +1,76 @@
+File format - 1
+# of Tracks - 5
+Ticks/quarter note - 960
+
+Start of track 1 at Byte 14
+Track length: 275
+0: Control change event, Channel: 0
+0: Control change event, Channel: 0
+0: Control change event, Channel: 0
+0: Control change event, Channel: 0
+0: Control change event, Channel: 1
+0: Control change event, Channel: 1
+0: Control change event, Channel: 1
+0: Control change event, Channel: 1
+0: Control change event, Channel: 2
+0: Control change event, Channel: 2
+0: Control change event, Channel: 2
+0: Control change event, Channel: 2
+0: Control change event, Channel: 3
+0: Control change event, Channel: 3
+0: Control change event, Channel: 3
+0: Control change event, Channel: 3
+0: Control change event, Channel: 4
+0: Control change event, Channel: 4
+0: Control change event, Channel: 4
+0: Control change event, Channel: 4
+0: Control change event, Channel: 5
+0: Control change event, Channel: 5
+0: Control change event, Channel: 5
+0: Control change event, Channel: 5
+0: Control change event, Channel: 6
+0: Control change event, Channel: 6
+0: Control change event, Channel: 6
+0: Control change event, Channel: 6
+0: Control change event, Channel: 7
+0: Control change event, Channel: 7
+0: Control change event, Channel: 7
+0: Control change event, Channel: 7
+0: Control change event, Channel: 8
+0: Control change event, Channel: 8
+0: Control change event, Channel: 8
+0: Control change event, Channel: 8
+0: Control change event, Channel: 9
+0: Control change event, Channel: 9
+0: Control change event, Channel: 9
+0: Control change event, Channel: 9
+0: Control change event, Channel: 10
+0: Control change event, Channel: 10
+0: Control change event, Channel: 10
+0: Control change event, Channel: 10
+0: Control change event, Channel: 11
+0: Control change event, Channel: 11
+0: Control change event, Channel: 11
+0: Control change event, Channel: 11
+0: Control change event, Channel: 12
+0: Control change event, Channel: 12
+0: Control change event, Channel: 12
+0: Control change event, Channel: 12
+0: Control change event, Channel: 13
+0: Control change event, Channel: 13
+0: Control change event, Channel: 13
+0: Control change event, Channel: 13
+0: Control change event, Channel: 14
+0: Control change event, Channel: 14
+0: Control change event, Channel: 14
+0: Control change event, Channel: 14
+0: Control change event, Channel: 15
+0: Control change event, Channel: 15
+0: Control change event, Channel: 15
+0: Control change event, Channel: 15
+0: Time Signature event
+0: Tempo to 500000 usec/quarter note
+0: End of track 
+
+Start of track 2 at Byte 297
+Track length: 29291

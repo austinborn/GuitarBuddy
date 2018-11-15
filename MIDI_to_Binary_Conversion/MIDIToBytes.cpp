@@ -14,11 +14,10 @@
 
 /*
  * Curent challenges:
- * - How to determine playable notes ad chords for a song.
- * - How to save the bytes in a compressed binary file format.
- * - How to choose the frame for a note to begin.
- * - Fixing the timings for notes based on the ticks for a note
- * - Fix make clean for make file
+ * - Fix ussues reading certain MIDI files
+ * - Fix issues with getting all channel notes
+ * - Create new function to convert to binary format instead of .csv
+ * - Output proper header data and frame data accordingly
  */
 
 /* About the MIDI Format:
@@ -97,17 +96,17 @@ int main(int argc, char** argv){
     for (i = 0; i < 2; i++)
         division = (division << 8) + (unsigned char)buf[i];
 
-    //If division bit 15 = 1, divison[14:0] is ticks per quarter note
-    if(division & 0x80){
-        long tpq = division & 0x7F;
-        outfile << "Ticks/quarter note - " << tpq << endl;
-    }
-    //Else division[14:8] is negative fps, division[7:0] is ticks per frame
-    else{
-        long fps = -(int)(division & 0x70);
-        long tpf = division & 0x0F;
+    //If division bit 15 = 1, division[14:8] is negative fps, division[7:0] is ticks per frame
+    if(division & 0x8000){
+        long fps = -(int)(division & 0x7F00);
+        long tpf = division & 0x00FF;
         outfile << "Frames/second - " << fps << endl;
         outfile << "Ticks/frame - " << tpf << endl;
+    }
+    //Else, division[14:0] is ticks/quarter note
+    else{
+        long tpq = division & 0x7FFF;
+        outfile << "Ticks/quarter note - " << tpq << endl;
     }
 
     //Initialize track variables
@@ -175,7 +174,7 @@ int main(int argc, char** argv){
             unsigned char status = buf[0];
 
             //Parse Status
-            if (status == 0x80) { //Note off event
+            if ((status >> 4) == 0x8) { //Note off event
 
                 //Get Note number (and skip velocity)
                 readFromFile(infile, buf, 2, bytes_left);
@@ -183,10 +182,10 @@ int main(int argc, char** argv){
                 long note_num = buf[0];
 
                 //Record in CSV
-                outfile << total_time << ": " << "Off, " << noteFinder(note_num) << endl;
+                outfile << total_time << ": " << "Off, " << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
             }
 
-            else if (status == 0x90) { //Note on event
+            else if ((status >> 4) == 0x9) { //Note on event
 
                 //Get Note number (and skip velocity)
                 readFromFile(infile, buf, 2, bytes_left);
@@ -194,56 +193,78 @@ int main(int argc, char** argv){
                 long note_num = buf[0];
 
                 //Record in CSV
-                outfile << total_time << ": " << "On, " << noteFinder(note_num) << endl;
+                outfile << total_time << ": " << "On, " << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
             }
 
             //Other unimportant MIDI events
-            else if ((status >> 4) == 0xA0){ //Polyphonic key pressure
+            else if ((status >> 4) == 0xA){ //Polyphonic key pressure
                 readFromFile(infile, buf, 2, bytes_left);
                 trk_bytes_left -= 2;
+                outfile << total_time << ": Polyphonic key pressure event" << ", Channel: " << (status & 0xF) << endl;
             }
-            else if ((status >> 4) == 0xB0){ //Control Change
+            else if ((status >> 4) == 0xB){ //Control Change
                 readFromFile(infile, buf, 2, bytes_left);
                 trk_bytes_left -= 2;
+                outfile << total_time << ": Control change event" << ", Channel: " << (status & 0xF) << endl;
             }
-            else if ((status >> 4) == 0xC0){ //Program Change
+            else if ((status >> 4) == 0xC){ //Program Change
                 readFromFile(infile, buf, 1, bytes_left);
                 trk_bytes_left -= 1;
+                outfile << total_time << ": Program change event" << ", Channel: " << (status & 0xF) << endl;
             }
-            else if ((status >> 4) == 0xD0){ //Channel Pressure
+            else if ((status >> 4) == 0xD){ //Channel Pressure
                 readFromFile(infile, buf, 1, bytes_left);
                 trk_bytes_left -= 1;
+                outfile << total_time << ": Channel Pressure event" << ", Channel: " << (status & 0xF) << endl;
             }
-            else if ((status >> 4) == 0xE0){ //Pitch Wheel Change
+            else if ((status >> 4) == 0xE){ //Pitch Wheel Change
                 readFromFile(infile, buf, 2, bytes_left);
                 trk_bytes_left -= 2;
+                outfile << total_time << ": Pitch wheel event" << ", Channel: " << (status & 0xF) << endl;
             }
             else if (status == 0xF0){ //System Exclusive
                 readFromFile(infile, buf, 1, bytes_left);
                 trk_bytes_left -= 1;
+                outfile << total_time << ": System Exclusive event" << endl;
             }
             else if (status == 0xF2){ //Song Position Pointer
                 readFromFile(infile, buf, 2, bytes_left);
                 trk_bytes_left -= 2;
+                outfile << total_time << ": Song position pointer" << endl;
             }
             else if (status == 0xF3){ //Song Select
                 readFromFile(infile, buf, 1, bytes_left);
                 trk_bytes_left -= 1;
+                outfile << total_time << ": Song select event" << endl;
             }
-            else if (status == 0xF6) //Tune Request
+            else if (status == 0xF6){ //Tune Request
+                outfile << total_time << ": Tune request" << endl;
                 continue;
-            else if (status == 0xF7) //End of Exclusive
+            }
+            else if (status == 0xF7){ //End of Exclusive
+                outfile << total_time << ": End of exclusive" << endl;
                 continue;
-            else if (status == 0xF8) //Timing Clock
+            }
+            else if (status == 0xF8){ //Timing Clock
+                outfile << total_time << ": Timing clock" << endl;
                 continue;
-            else if (status == 0xFA) //Start
+            }
+            else if (status == 0xFA){ //Start
+                outfile << total_time << ": Start" << endl;
                 continue;
-            else if (status == 0xFB) //Continue
+            }
+            else if (status == 0xFB){ //Continue
+                outfile << total_time << ": Continue" << endl;
                 continue;
-            else if (status == 0xFC) //Stop
+            }
+            else if (status == 0xFC){ //Stop
+                outfile << total_time << ": Stop" << endl;
                 continue;
-            else if (status == 0xFE) //Active sensing
+            }
+            else if (status == 0xFE){ //Active sensing
+                outfile << total_time << ": Active sensing" << endl;
                 continue;
+            }
             else if (status == 0xFF){ //Reset (escape for meta events)
                 //Get meta event type
                 readFromFile(infile, buf, 1, bytes_left);
@@ -258,10 +279,12 @@ int main(int argc, char** argv){
                 if (meta_event_type == 0x00){ //Sequence Number
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Sequence number event" << endl;
                 }
                 else if (meta_event_type == 0x01){ //Text Event
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Text event" << endl;
                 }
                 else if (meta_event_type == 0x02){ //Copyright Notice
                     readFromFile(infile, buf, length, bytes_left);
@@ -271,37 +294,44 @@ int main(int argc, char** argv){
                 else if (meta_event_type == 0x03){ //Sequence/Track Name
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Sequence/Track Name event" << endl;
                 }
                 else if (meta_event_type == 0x04){ //Instrument Name
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Instrument name event" << endl;
                 }
                 else if (meta_event_type == 0x05){ //Lyric
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Lyrics event" << endl;
                 }
                 else if (meta_event_type == 0x06){ //Text  Marker
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Text Marker" << endl;
                 }
                 else if (meta_event_type == 0x07){ //Cue Point
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Cue point" << endl;
                 }
                 else if (meta_event_type == 0x20){ //MIDI Channel Prefix
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": MIDI Channel Prefix" << endl;
                 }
                 else if (meta_event_type == 0x2F){ //End of Track
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": End of track " << endl;
                 }
                 else if (meta_event_type == 0x51){ //Set Tempo
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
                     long tempo = 0;
                     for (i = 0; i < length; i++){
-                        tempo = (tempo << 8) | (0x000F & buf[i]);
+                        tempo = (tempo << 8) | (0x00FF & buf[i]);
                     }
                     outfile << total_time << ": Tempo to " << tempo << " usec/quarter note" << endl;
                 }
@@ -323,6 +353,7 @@ int main(int argc, char** argv){
                 else if (meta_event_type == 0x7F){ //Sequencer Specific Meta-Event
                     readFromFile(infile, buf, length, bytes_left);
                     trk_bytes_left -= length;
+                    outfile << total_time << ": Sequencer-specific event" << endl;
                 }
                 
             }

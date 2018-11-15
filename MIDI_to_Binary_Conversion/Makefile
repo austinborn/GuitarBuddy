@@ -4,5 +4,8 @@ CFLAGS=-I
 make: MIDIToBytes.o
 	$(CC) -o MIDIToBytes MIDIToBytes.o
 
-clean:
-	rm *.o ./MIDIToBytes.exe
+cleanwin:
+	del /F /Q *.o
+
+cleanlinux:
+	rm -f *.o

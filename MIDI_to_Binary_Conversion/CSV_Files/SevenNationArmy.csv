@@ -1,0 +1,2257 @@
+File format - 1
+# of Tracks - 5
+Ticks/quarter note - 480
+
+Start of track 1 at Byte 14
+Track length: 40
+0: Tempo to 500000 usec/quarter note
+0: Sequence/Track Name event
+0: Time Signature event
+0: End of track 
+
+Start of track 2 at Byte 62
+Track length: 5296
+0: Sequence/Track Name event
+0: Control change event, Channel: 0
+6: Pitch wheel event, Channel: 0
+6: Control change event, Channel: 1
+12: Pitch wheel event, Channel: 1
+12: Program change event, Channel: 0
+12: Program change event, Channel: 1
+12: Control change event, Channel: 0
+12: Control change event, Channel: 1
+12: Control change event, Channel: 0
+12: Control change event, Channel: 1
+12: Control change event, Channel: 0
+12: Control change event, Channel: 1
+12: Control change event, Channel: 0
+12: Control change event, Channel: 1
+12: Control change event, Channel: 0
+12: Control change event, Channel: 1
+12: Control change event, Channel: 0
+12: Control change event, Channel: 1
+46092: On, D3, Channel: 0
+46187: Off, E8, Channel: 1
+48510: Off, E8, Channel: 1
+50833: Off, E8, Channel: 1
+53156: Off, E8, Channel: 1
+55479: Off, E8, Channel: 1
+57802: Off, E8, Channel: 1
+60125: Off, E8, Channel: 1
+62448: Off, E8, Channel: 1
+64766: Off, E8, Channel: 1
+67079: Off, E8, Channel: 1
+69679: Off, E3, Channel: 0
+69799: On, E3, Channel: 0
+70174: Off, E3, Channel: 0
+70294: On, A3, Channel: 0
+70529: Off, E8, Channel: 1
+73422: Off, C#4, Channel: 0
+73674: On, E4, Channel: 0
+74061: Off, E8, Channel: 1
+76966: Off, A#5, Channel: 1
+77784: On, E4, Channel: 0
+78651: Off, E4, Channel: 0
+78783: On, E4, Channel: 1
+79050: Pitch wheel event, Channel: 1
+79521: Pitch wheel event, Channel: 1
+79521: Off, B3, Channel: 1
+79521: Pitch wheel event, Channel: 1
+79521: Off, E3, Channel: 1
+79521: Pitch wheel event, Channel: 1
+79521: On, G4, Channel: 0
+79902: Off, G4, Channel: 0
+80157: On, E4, Channel: 0
+80544: Off, E4, Channel: 0
+80796: On, D4, Channel: 0
+81181: Off, D4, Channel: 0
+81311: On, C4, Channel: 0
+82414: Off, C4, Channel: 0
+82542: On, B3, Channel: 0
+87232: Off, E4, Channel: 0
+87364: On, E4, Channel: 1
+87631: Pitch wheel event, Channel: 1
+88102: Pitch wheel event, Channel: 1
+88102: Off, B3, Channel: 1
+88102: Pitch wheel event, Channel: 1
+88102: Off, E3, Channel: 1
+88102: Pitch wheel event, Channel: 1
+88102: On, G4, Channel: 0
+88483: Off, G4, Channel: 0
+88738: On, E4, Channel: 0
+89125: Off, E4, Channel: 0
+89377: On, D4, Channel: 0
+89762: Off, D4, Channel: 0
+89892: On, C4, Channel: 0
+90395: Off, C4, Channel: 0
+90523: On, D4, Channel: 0
+91028: Off, D4, Channel: 0
+91158: On, C4, Channel: 0
+91541: Off, C4, Channel: 0
+91669: On, B3, Channel: 0
+96359: Off, E4, Channel: 0
+96491: On, E4, Channel: 1
+96758: Pitch wheel event, Channel: 1
+97229: Pitch wheel event, Channel: 1
+97229: Off, B3, Channel: 1
+97229: Pitch wheel event, Channel: 1
+97229: Off, E3, Channel: 1
+97229: Pitch wheel event, Channel: 1
+97229: On, G4, Channel: 0
+97610: Off, G4, Channel: 0
+97865: On, E4, Channel: 0
+98252: Off, E4, Channel: 0
+98504: On, D4, Channel: 0
+98889: Off, D4, Channel: 0
+99019: On, C4, Channel: 0
+100122: Off, C4, Channel: 0
+100250: On, B3, Channel: 0
+104940: Off, E4, Channel: 0
+105072: On, E4, Channel: 1
+105339: Pitch wheel event, Channel: 1
+105810: Pitch wheel event, Channel: 1
+105810: Off, B3, Channel: 1
+105810: Pitch wheel event, Channel: 1
+105810: Off, E3, Channel: 1
+105810: Pitch wheel event, Channel: 1
+105810: On, G4, Channel: 0
+106191: Off, G4, Channel: 0
+106446: On, E4, Channel: 0
+106833: Off, E4, Channel: 0
+107085: On, D4, Channel: 0
+107470: Off, D4, Channel: 0
+107600: On, C4, Channel: 0
+108103: Off, C4, Channel: 0
+108231: On, D4, Channel: 0
+108736: Off, D4, Channel: 0
+108866: On, C4, Channel: 0
+109249: Off, C4, Channel: 0
+109377: On, B3, Channel: 0
+110479: Off, B3, Channel: 0
+110606: On, D3, Channel: 0
+110701: Off, E8, Channel: 1
+113024: Off, E8, Channel: 1
+115347: Off, E8, Channel: 1
+117670: Off, E8, Channel: 1
+119993: Off, E8, Channel: 1
+122316: Off, E8, Channel: 1
+124639: Off, E8, Channel: 1
+126962: Off, E8, Channel: 1
+129280: Off, E8, Channel: 1
+131593: Off, E8, Channel: 1
+134193: Off, E3, Channel: 0
+134313: On, E3, Channel: 0
+134688: Off, E3, Channel: 0
+134808: On, A3, Channel: 0
+135043: Off, E8, Channel: 1
+137936: Off, C#4, Channel: 0
+138188: On, E4, Channel: 0
+138575: Off, E8, Channel: 1
+141480: Off, E8, Channel: 1
+141886: Off, CA#, Channel: 2
+144079: Off, E8, Channel: 1
+146402: Off, E8, Channel: 1
+148725: Off, E8, Channel: 1
+151048: Off, E8, Channel: 1
+153371: Off, E8, Channel: 1
+155694: Off, E8, Channel: 1
+158017: Off, E8, Channel: 1
+160340: Off, E8, Channel: 1
+162658: Off, E8, Channel: 1
+164971: Off, E8, Channel: 1
+167571: Off, E3, Channel: 0
+167691: On, E3, Channel: 0
+168066: Off, E3, Channel: 0
+168186: On, A3, Channel: 0
+168421: Off, E8, Channel: 1
+171314: Off, C#4, Channel: 0
+171566: On, E4, Channel: 0
+171953: Off, E8, Channel: 1
+174858: Off, A#5, Channel: 1
+175676: On, E4, Channel: 0
+176543: Off, E4, Channel: 0
+176675: On, E4, Channel: 1
+176942: Pitch wheel event, Channel: 1
+177413: Pitch wheel event, Channel: 1
+177413: Off, B3, Channel: 1
+177413: Pitch wheel event, Channel: 1
+177413: Off, E3, Channel: 1
+177413: Pitch wheel event, Channel: 1
+177413: On, G4, Channel: 0
+177794: Off, G4, Channel: 0
+178049: On, E4, Channel: 0
+178436: Off, E4, Channel: 0
+178688: On, D4, Channel: 0
+179073: Off, D4, Channel: 0
+179203: On, C4, Channel: 0
+180306: Off, C4, Channel: 0
+180434: On, B3, Channel: 0
+185124: Off, E4, Channel: 0
+185256: On, E4, Channel: 1
+185523: Pitch wheel event, Channel: 1
+185994: Pitch wheel event, Channel: 1
+185994: Off, B3, Channel: 1
+185994: Pitch wheel event, Channel: 1
+185994: Off, E3, Channel: 1
+185994: Pitch wheel event, Channel: 1
+185994: On, G4, Channel: 0
+186375: Off, G4, Channel: 0
+186630: On, E4, Channel: 0
+187017: Off, E4, Channel: 0
+187269: On, D4, Channel: 0
+187654: Off, D4, Channel: 0
+187784: On, C4, Channel: 0
+188287: Off, C4, Channel: 0
+188415: On, D4, Channel: 0
+188920: Off, D4, Channel: 0
+189050: On, C4, Channel: 0
+189433: Off, C4, Channel: 0
+189561: On, B3, Channel: 0
+194251: Off, E4, Channel: 0
+194383: On, E4, Channel: 1
+194650: Pitch wheel event, Channel: 1
+195121: Pitch wheel event, Channel: 1
+195121: Off, B3, Channel: 1
+195121: Pitch wheel event, Channel: 1
+195121: Off, E3, Channel: 1
+195121: Pitch wheel event, Channel: 1
+195121: On, G4, Channel: 0
+195502: Off, G4, Channel: 0
+195757: On, E4, Channel: 0
+196144: Off, E4, Channel: 0
+196396: On, D4, Channel: 0
+196781: Off, D4, Channel: 0
+196911: On, C4, Channel: 0
+198014: Off, C4, Channel: 0
+198142: On, B3, Channel: 0
+202832: Off, E4, Channel: 0
+202964: On, E4, Channel: 1
+203231: Pitch wheel event, Channel: 1
+203702: Pitch wheel event, Channel: 1
+203702: Off, B3, Channel: 1
+203702: Pitch wheel event, Channel: 1
+203702: Off, E3, Channel: 1
+203702: Pitch wheel event, Channel: 1
+203702: On, G4, Channel: 0
+204083: Off, G4, Channel: 0
+204338: On, E4, Channel: 0
+204725: Off, E4, Channel: 0
+204977: On, D4, Channel: 0
+205362: Off, D4, Channel: 0
+205492: On, C4, Channel: 0
+205995: Off, C4, Channel: 0
+206123: On, D4, Channel: 0
+206628: Off, D4, Channel: 0
+206758: On, C4, Channel: 0
+207141: Off, C4, Channel: 0
+207269: On, B3, Channel: 0
+211959: Off, E4, Channel: 0
+212091: On, E4, Channel: 1
+212358: Pitch wheel event, Channel: 1
+212829: Pitch wheel event, Channel: 1
+212829: Off, B3, Channel: 1
+212829: Pitch wheel event, Channel: 1
+212829: Off, E3, Channel: 1
+212829: Pitch wheel event, Channel: 1
+212829: On, G4, Channel: 0
+213210: Off, G4, Channel: 0
+213465: On, E4, Channel: 0
+213852: Off, E4, Channel: 0
+214104: On, D4, Channel: 0
+214489: Off, D4, Channel: 0
+214619: On, C4, Channel: 0
+215722: Off, C4, Channel: 0
+215850: On, B3, Channel: 0
+220540: Off, E4, Channel: 0
+220672: On, E4, Channel: 1
+220939: Pitch wheel event, Channel: 1
+221410: Pitch wheel event, Channel: 1
+221410: Off, B3, Channel: 1
+221410: Pitch wheel event, Channel: 1
+221410: Off, E3, Channel: 1
+221410: Pitch wheel event, Channel: 1
+221410: On, G4, Channel: 0
+221791: Off, G4, Channel: 0
+222046: On, E4, Channel: 0
+222433: Off, E4, Channel: 0
+222685: On, D4, Channel: 0
+223070: Off, D4, Channel: 0
+223200: On, C4, Channel: 0
+223703: Off, C4, Channel: 0
+223831: On, D4, Channel: 0
+224336: Off, D4, Channel: 0
+224466: On, C4, Channel: 0
+224849: Off, C4, Channel: 0
+224977: On, B3, Channel: 0
+229667: Off, E4, Channel: 0
+229799: On, E4, Channel: 1
+230066: Pitch wheel event, Channel: 1
+230537: Pitch wheel event, Channel: 1
+230537: Off, B3, Channel: 1
+230537: Pitch wheel event, Channel: 1
+230537: Off, E3, Channel: 1
+230537: Pitch wheel event, Channel: 1
+230537: On, G4, Channel: 0
+230918: Off, G4, Channel: 0
+231173: On, E4, Channel: 0
+231560: Off, E4, Channel: 0
+231812: On, D4, Channel: 0
+232197: Off, D4, Channel: 0
+232327: On, C4, Channel: 0
+233430: Off, C4, Channel: 0
+233558: On, B3, Channel: 0
+238248: Off, E4, Channel: 0
+238380: On, E4, Channel: 1
+238647: Pitch wheel event, Channel: 1
+239118: Pitch wheel event, Channel: 1
+239118: Off, B3, Channel: 1
+239118: Pitch wheel event, Channel: 1
+239118: Off, E3, Channel: 1
+239118: Pitch wheel event, Channel: 1
+239118: On, G4, Channel: 0
+239499: Off, G4, Channel: 0
+239754: On, E4, Channel: 0
+240141: Off, E4, Channel: 0
+240393: On, D4, Channel: 0
+240778: Off, D4, Channel: 0
+240908: On, C4, Channel: 0
+241411: Off, C4, Channel: 0
+241539: On, D4, Channel: 0
+242044: Off, D4, Channel: 0
+242174: On, C4, Channel: 0
+242557: Off, C4, Channel: 0
+242685: On, B3, Channel: 0
+243787: Off, B3, Channel: 0
+243914: On, D3, Channel: 0
+244009: Off, E8, Channel: 1
+246332: Off, E8, Channel: 1
+248655: Off, E8, Channel: 1
+250978: Off, E8, Channel: 1
+253301: Off, E8, Channel: 1
+255624: Off, E8, Channel: 1
+257947: Off, E8, Channel: 1
+260270: Off, E8, Channel: 1
+262588: Off, E8, Channel: 1
+264901: Off, E8, Channel: 1
+267501: Off, E3, Channel: 0
+267621: On, E3, Channel: 0
+267996: Off, E3, Channel: 0
+268116: On, A3, Channel: 0
+268351: Off, E8, Channel: 1
+271244: Off, C#4, Channel: 0
+271496: On, E4, Channel: 0
+271883: Off, E8, Channel: 1
+274788: Off, E8, Channel: 1
+275194: Off, G#, Channel: 2
+277387: Off, E8, Channel: 1
+279710: Off, E8, Channel: 1
+282033: Off, E8, Channel: 1
+284356: Off, E8, Channel: 1
+286679: Off, E8, Channel: 1
+289002: Off, E8, Channel: 1
+291325: Off, E8, Channel: 1
+293648: Off, E8, Channel: 1
+295966: Off, E8, Channel: 1
+298279: Off, E8, Channel: 1
+300879: Off, E3, Channel: 0
+300999: On, E3, Channel: 0
+301374: Off, E3, Channel: 0
+301494: On, A3, Channel: 0
+301729: Off, E8, Channel: 1
+304622: Off, C#4, Channel: 0
+304874: On, E4, Channel: 0
+305261: Off, E8, Channel: 1
+308166: Off, A#5, Channel: 1
+308984: On, E4, Channel: 0
+309851: Off, E4, Channel: 0
+309983: On, E4, Channel: 1
+310250: Pitch wheel event, Channel: 1
+310721: Pitch wheel event, Channel: 1
+310721: Off, B3, Channel: 1
+310721: Pitch wheel event, Channel: 1
+310721: Off, E3, Channel: 1
+310721: Pitch wheel event, Channel: 1
+310721: On, G4, Channel: 0
+311102: Off, G4, Channel: 0
+311357: On, E4, Channel: 0
+311744: Off, E4, Channel: 0
+311996: On, D4, Channel: 0
+312381: Off, D4, Channel: 0
+312511: On, C4, Channel: 0
+313614: Off, C4, Channel: 0
+313742: On, B3, Channel: 0
+318432: Off, E4, Channel: 0
+318564: On, E4, Channel: 1
+318831: Pitch wheel event, Channel: 1
+319302: Pitch wheel event, Channel: 1
+319302: Off, B3, Channel: 1
+319302: Pitch wheel event, Channel: 1
+319302: Off, E3, Channel: 1
+319302: Pitch wheel event, Channel: 1
+319302: On, G4, Channel: 0
+319683: Off, G4, Channel: 0
+319938: On, E4, Channel: 0
+320325: Off, E4, Channel: 0
+320577: On, D4, Channel: 0
+320962: Off, D4, Channel: 0
+321092: On, C4, Channel: 0
+321595: Off, C4, Channel: 0
+321723: On, D4, Channel: 0
+322228: Off, D4, Channel: 0
+322358: On, C4, Channel: 0
+322741: Off, C4, Channel: 0
+322869: On, B3, Channel: 0
+327559: Off, E4, Channel: 0
+327691: On, E4, Channel: 1
+327958: Pitch wheel event, Channel: 1
+328429: Pitch wheel event, Channel: 1
+328429: Off, B3, Channel: 1
+328429: Pitch wheel event, Channel: 1
+328429: Off, E3, Channel: 1
+328429: Pitch wheel event, Channel: 1
+328429: On, G4, Channel: 0
+328810: Off, G4, Channel: 0
+329065: On, E4, Channel: 0
+329452: Off, E4, Channel: 0
+329704: On, D4, Channel: 0
+330089: Off, D4, Channel: 0
+330219: On, C4, Channel: 0
+331322: Off, C4, Channel: 0
+331450: On, B3, Channel: 0
+336140: Off, E4, Channel: 0
+336272: On, E4, Channel: 1
+336539: Pitch wheel event, Channel: 1
+337010: Pitch wheel event, Channel: 1
+337010: Off, B3, Channel: 1
+337010: Pitch wheel event, Channel: 1
+337010: Off, E3, Channel: 1
+337010: Pitch wheel event, Channel: 1
+337010: On, G4, Channel: 0
+337391: Off, G4, Channel: 0
+337646: On, E4, Channel: 0
+338033: Off, E4, Channel: 0
+338285: On, D4, Channel: 0
+338670: Off, D4, Channel: 0
+338800: On, C4, Channel: 0
+339303: Off, C4, Channel: 0
+339431: On, D4, Channel: 0
+339936: Off, D4, Channel: 0
+340066: On, C4, Channel: 0
+340449: Off, C4, Channel: 0
+340577: On, B3, Channel: 0
+341679: Off, B3, Channel: 0
+341806: On, G#4, Channel: 0
+342055: Off, C-1, Channel: 15
+
+Start of track 3 at Byte 5366
+Track length: 2427
+0: Sequence/Track Name event
+0: Control change event, Channel: 2
+6: Pitch wheel event, Channel: 2
+6: Control change event, Channel: 3
+12: Pitch wheel event, Channel: 3
+12: Program change event, Channel: 2
+12: Program change event, Channel: 3
+12: Control change event, Channel: 2
+12: Control change event, Channel: 3
+12: Control change event, Channel: 2
+12: Control change event, Channel: 3
+12: Control change event, Channel: 2
+12: Control change event, Channel: 3
+12: Control change event, Channel: 2
+12: Control change event, Channel: 3
+12: Control change event, Channel: 2
+12: Control change event, Channel: 3
+12: Control change event, Channel: 2
+12: Control change event, Channel: 3
+119052: On, E4, Channel: 3
+119132: Pitch wheel event, Channel: 3
+120164: Pitch wheel event, Channel: 3
+122804: Pitch wheel event, Channel: 3
+123398: Pitch wheel event, Channel: 3
+126038: Pitch wheel event, Channel: 3
+126778: Pitch wheel event, Channel: 3
+126778: On, E4, Channel: 3
+126858: Pitch wheel event, Channel: 3
+127598: Pitch wheel event, Channel: 3
+127598: On, E4, Channel: 3
+127678: Pitch wheel event, Channel: 3
+128330: Pitch wheel event, Channel: 3
+128394: On, G4, Channel: 3
+128394: Pitch wheel event, Channel: 3
+128555: Off, E4, Channel: 1
+128621: Off, C3, Channel: 1
+129413: Off, G4, Channel: 3
+129413: Pitch wheel event, Channel: 3
+132055: Pitch wheel event, Channel: 3
+132865: Off, F#4, Channel: 3
+132865: Pitch wheel event, Channel: 3
+135505: Pitch wheel event, Channel: 3
+136537: Pitch wheel event, Channel: 3
+139177: Pitch wheel event, Channel: 3
+139771: Pitch wheel event, Channel: 3
+142414: Pitch wheel event, Channel: 3
+143157: Pitch wheel event, Channel: 3
+143157: On, A4, Channel: 3
+143237: Pitch wheel event, Channel: 3
+143982: Pitch wheel event, Channel: 3
+143982: On, G4, Channel: 3
+144062: Pitch wheel event, Channel: 3
+144659: Pitch wheel event, Channel: 3
+147302: Pitch wheel event, Channel: 3
+147342: Off, G4, Channel: 3
+147342: Pitch wheel event, Channel: 3
+147462: On, G4, Channel: 3
+147522: Pitch wheel event, Channel: 3
+148057: Pitch wheel event, Channel: 3
+150702: Pitch wheel event, Channel: 3
+151301: Pitch wheel event, Channel: 3
+153944: Pitch wheel event, Channel: 3
+153984: Off, G4, Channel: 3
+153984: Pitch wheel event, Channel: 3
+154104: On, F#4, Channel: 3
+154184: Pitch wheel event, Channel: 3
+154994: Off, F#4, Channel: 3
+154994: Pitch wheel event, Channel: 3
+157634: Pitch wheel event, Channel: 3
+158666: Pitch wheel event, Channel: 3
+161306: Pitch wheel event, Channel: 3
+161900: Pitch wheel event, Channel: 3
+164540: Pitch wheel event, Channel: 3
+165280: Pitch wheel event, Channel: 3
+165280: On, E4, Channel: 3
+165360: Pitch wheel event, Channel: 3
+166100: Pitch wheel event, Channel: 3
+166100: On, E4, Channel: 3
+166180: Pitch wheel event, Channel: 3
+166832: Pitch wheel event, Channel: 3
+166896: On, G4, Channel: 3
+166896: Pitch wheel event, Channel: 3
+167057: Off, E4, Channel: 1
+167123: Off, C3, Channel: 1
+167915: Off, G4, Channel: 3
+167915: Pitch wheel event, Channel: 3
+170557: Pitch wheel event, Channel: 3
+171367: Off, F#4, Channel: 3
+171367: Pitch wheel event, Channel: 3
+174007: Pitch wheel event, Channel: 3
+175039: Pitch wheel event, Channel: 3
+177679: Pitch wheel event, Channel: 3
+178273: Pitch wheel event, Channel: 3
+180916: Pitch wheel event, Channel: 3
+181659: Pitch wheel event, Channel: 3
+181659: On, A4, Channel: 3
+181739: Pitch wheel event, Channel: 3
+182484: Pitch wheel event, Channel: 3
+182484: On, G4, Channel: 3
+182564: Pitch wheel event, Channel: 3
+183161: Pitch wheel event, Channel: 3
+185804: Pitch wheel event, Channel: 3
+185844: Off, G4, Channel: 3
+185844: Pitch wheel event, Channel: 3
+185964: On, G4, Channel: 3
+186024: Pitch wheel event, Channel: 3
+186559: Pitch wheel event, Channel: 3
+189204: Pitch wheel event, Channel: 3
+189803: Pitch wheel event, Channel: 3
+192446: Pitch wheel event, Channel: 3
+192486: Off, G4, Channel: 3
+192486: Pitch wheel event, Channel: 3
+192606: On, F#4, Channel: 3
+192686: Pitch wheel event, Channel: 3
+193466: On, D#5, Channel: 2
+193495: Off, D#5, Channel: 2
+193496: Off, F#4, Channel: 3
+193496: Pitch wheel event, Channel: 3
+196148: Pitch wheel event, Channel: 3
+197192: Pitch wheel event, Channel: 3
+199844: Pitch wheel event, Channel: 3
+202399: Off, E5, Channel: 2
+202400: Off, E5, Channel: 3
+202400: Pitch wheel event, Channel: 3
+205055: Pitch wheel event, Channel: 3
+205810: Pitch wheel event, Channel: 3
+205810: On, E5, Channel: 3
+205890: Pitch wheel event, Channel: 3
+206642: Pitch wheel event, Channel: 3
+206642: On, E5, Channel: 3
+206722: Pitch wheel event, Channel: 3
+207328: Pitch wheel event, Channel: 3
+209903: Pitch wheel event, Channel: 3
+210064: Off, E4, Channel: 1
+210130: Off, C3, Channel: 1
+210922: Off, G5, Channel: 3
+210922: Pitch wheel event, Channel: 3
+213576: Pitch wheel event, Channel: 3
+214356: On, D#5, Channel: 2
+214385: Off, D#5, Channel: 2
+214386: Off, F#5, Channel: 3
+214386: Pitch wheel event, Channel: 3
+216969: Off, E5, Channel: 3
+216969: Pitch wheel event, Channel: 3
+217678: On, E5, Channel: 3
+217758: Pitch wheel event, Channel: 3
+218364: Pitch wheel event, Channel: 3
+221019: Pitch wheel event, Channel: 3
+221774: Pitch wheel event, Channel: 3
+221774: On, A5, Channel: 3
+221854: Pitch wheel event, Channel: 3
+222611: Pitch wheel event, Channel: 3
+222611: On, G5, Channel: 3
+222691: Pitch wheel event, Channel: 3
+223300: Pitch wheel event, Channel: 3
+225955: Pitch wheel event, Channel: 3
+226564: Pitch wheel event, Channel: 3
+226624: On, G5, Channel: 3
+226684: Pitch wheel event, Channel: 3
+227231: Pitch wheel event, Channel: 3
+229888: Pitch wheel event, Channel: 3
+230499: Pitch wheel event, Channel: 3
+233154: Pitch wheel event, Channel: 3
+233194: Off, G5, Channel: 3
+233194: Pitch wheel event, Channel: 3
+233314: On, F#5, Channel: 3
+233394: Pitch wheel event, Channel: 3
+234174: On, D#5, Channel: 2
+234203: Off, D#5, Channel: 2
+234204: Off, F#5, Channel: 3
+234204: Pitch wheel event, Channel: 3
+236856: Pitch wheel event, Channel: 3
+237900: Pitch wheel event, Channel: 3
+240552: Pitch wheel event, Channel: 3
+243107: Off, E5, Channel: 2
+243108: Off, E5, Channel: 3
+243108: Pitch wheel event, Channel: 3
+245762: Pitch wheel event, Channel: 3
+246516: Pitch wheel event, Channel: 3
+246516: On, E5, Channel: 3
+246596: Pitch wheel event, Channel: 3
+247348: Pitch wheel event, Channel: 3
+247348: On, E5, Channel: 3
+247428: Pitch wheel event, Channel: 3
+248034: Pitch wheel event, Channel: 3
+250609: Pitch wheel event, Channel: 3
+252497: Pitch wheel event, Channel: 3
+255152: Pitch wheel event, Channel: 3
+255932: On, D#5, Channel: 2
+255961: Off, D#5, Channel: 2
+255962: Off, G5, Channel: 3
+255962: Pitch wheel event, Channel: 3
+258614: Pitch wheel event, Channel: 3
+259658: Pitch wheel event, Channel: 3
+262310: Pitch wheel event, Channel: 3
+264865: Off, E5, Channel: 2
+264866: Off, E5, Channel: 3
+264866: Pitch wheel event, Channel: 3
+267520: Pitch wheel event, Channel: 3
+268274: Pitch wheel event, Channel: 3
+268274: On, E5, Channel: 3
+268354: Pitch wheel event, Channel: 3
+269106: Pitch wheel event, Channel: 3
+269106: On, E5, Channel: 3
+269186: Pitch wheel event, Channel: 3
+269792: Pitch wheel event, Channel: 3
+272446: Pitch wheel event, Channel: 3
+273200: Pitch wheel event, Channel: 3
+273200: On, E5, Channel: 3
+273280: Pitch wheel event, Channel: 3
+274032: Pitch wheel event, Channel: 3
+274032: On, C5, Channel: 3
+274112: Pitch wheel event, Channel: 3
+274714: Pitch wheel event, Channel: 3
+277361: Pitch wheel event, Channel: 3
+278171: Off, B4, Channel: 3
+278171: Pitch wheel event, Channel: 3
+280822: Off, G2, Channel: 2
+280822: On, G2, Channel: 2
+281062: Off, G2, Channel: 2
+281062: On, G2, Channel: 2
+281302: Off, G2, Channel: 2
+281302: On, G2, Channel: 2
+281542: Off, G2, Channel: 2
+281542: On, G2, Channel: 2
+281782: Off, G2, Channel: 2
+281782: On, G2, Channel: 2
+282022: Off, G2, Channel: 2
+282022: On, G2, Channel: 2
+282262: Off, G2, Channel: 2
+282262: On, G2, Channel: 2
+282502: Off, G2, Channel: 2
+282502: On, A2, Channel: 2
+282742: Off, A2, Channel: 2
+282742: On, A2, Channel: 2
+282982: Off, A2, Channel: 2
+282982: On, A2, Channel: 2
+283222: Off, A2, Channel: 2
+283222: On, A2, Channel: 2
+283462: Off, A2, Channel: 2
+283462: On, A2, Channel: 2
+283702: Off, A2, Channel: 2
+283702: On, A2, Channel: 2
+283942: Off, A2, Channel: 2
+283942: On, A2, Channel: 2
+284182: Off, A2, Channel: 2
+284182: On, A2, Channel: 2
+284422: Off, A2, Channel: 2
+284422: On, E2, Channel: 2
+288262: Off, E2, Channel: 2
+288262: On, E2, Channel: 2
+292102: Off, E2, Channel: 2
+292102: End of track 
+
+Start of track 4 at Byte 7801
+Track length: 4146
+0: Sequence/Track Name event
+0: Control change event, Channel: 4
+6: Pitch wheel event, Channel: 4
+6: Control change event, Channel: 5
+12: Pitch wheel event, Channel: 5
+12: Program change event, Channel: 4
+12: Program change event, Channel: 5
+12: Control change event, Channel: 4
+12: Control change event, Channel: 5
+12: Control change event, Channel: 4
+12: Control change event, Channel: 5
+12: Control change event, Channel: 4
+12: Control change event, Channel: 5
+12: Control change event, Channel: 4
+12: Control change event, Channel: 5
+12: Control change event, Channel: 4
+12: Control change event, Channel: 5
+12: Control change event, Channel: 4
+12: Control change event, Channel: 5
+12: On, E2, Channel: 4
+732: Off, E2, Channel: 4
+732: On, E2, Channel: 4
+852: Off, E2, Channel: 4
+972: On, G2, Channel: 4
+1092: Off, G2, Channel: 4
+1332: On, E2, Channel: 4
+1452: Off, E2, Channel: 4
+1692: On, D2, Channel: 4
+1932: Off, D2, Channel: 4
+1932: On, C2, Channel: 4
+2892: Off, C2, Channel: 4
+2892: On, B1, Channel: 4
+3852: Off, B1, Channel: 4
+3852: On, E2, Channel: 4
+4572: Off, E2, Channel: 4
+4572: On, E2, Channel: 4
+4692: Off, E2, Channel: 4
+4812: On, G2, Channel: 4
+4932: Off, G2, Channel: 4
+5172: On, E2, Channel: 4
+5292: Off, E2, Channel: 4
+5532: On, D2, Channel: 4
+5772: Off, D2, Channel: 4
+5772: On, C2, Channel: 4
+6732: Off, C2, Channel: 4
+6732: On, B1, Channel: 4
+7692: Off, B1, Channel: 4
+7692: On, E2, Channel: 4
+8412: Off, E2, Channel: 4
+8412: On, E2, Channel: 4
+8532: Off, E2, Channel: 4
+8652: On, G2, Channel: 4
+8772: Off, G2, Channel: 4
+9012: On, E2, Channel: 4
+9132: Off, E2, Channel: 4
+9372: On, D2, Channel: 4
+9612: Off, D2, Channel: 4
+9612: On, C2, Channel: 4
+10572: Off, C2, Channel: 4
+10572: On, B1, Channel: 4
+11532: Off, B1, Channel: 4
+11532: On, E2, Channel: 4
+12252: Off, E2, Channel: 4
+12252: On, E2, Channel: 4
+12372: Off, E2, Channel: 4
+12492: On, G2, Channel: 4
+12612: Off, G2, Channel: 4
+12852: On, E2, Channel: 4
+12972: Off, E2, Channel: 4
+13212: On, D2, Channel: 4
+13452: Off, D2, Channel: 4
+13452: On, C2, Channel: 4
+14412: Off, C2, Channel: 4
+14412: On, B1, Channel: 4
+15372: Off, B1, Channel: 4
+15372: On, E2, Channel: 4
+16092: Off, E2, Channel: 4
+16092: On, E2, Channel: 4
+16212: Off, E2, Channel: 4
+16332: On, G2, Channel: 4
+16452: Off, G2, Channel: 4
+16692: On, E2, Channel: 4
+16812: Off, E2, Channel: 4
+17052: On, D2, Channel: 4
+17292: Off, D2, Channel: 4
+17292: On, C2, Channel: 4
+18252: Off, C2, Channel: 4
+18252: On, B1, Channel: 4
+19212: Off, B1, Channel: 4
+19212: On, E2, Channel: 4
+19932: Off, E2, Channel: 4
+19932: On, E2, Channel: 4
+20052: Off, E2, Channel: 4
+20172: On, G2, Channel: 4
+20292: Off, G2, Channel: 4
+20532: On, E2, Channel: 4
+20652: Off, E2, Channel: 4
+20892: On, D2, Channel: 4
+21132: Off, D2, Channel: 4
+21132: On, C2, Channel: 4
+22092: Off, C2, Channel: 4
+22092: On, B1, Channel: 4
+23052: Off, B1, Channel: 4
+23052: On, E2, Channel: 4
+23772: Off, E2, Channel: 4
+23772: On, E2, Channel: 4
+23892: Off, E2, Channel: 4
+24012: On, G2, Channel: 4
+24132: Off, G2, Channel: 4
+24372: On, E2, Channel: 4
+24492: Off, E2, Channel: 4
+24732: On, D2, Channel: 4
+24972: Off, D2, Channel: 4
+24972: On, C2, Channel: 4
+25932: Off, C2, Channel: 4
+25932: On, B1, Channel: 4
+26892: Off, B1, Channel: 4
+26892: On, E2, Channel: 4
+27612: Off, E2, Channel: 4
+27612: On, E2, Channel: 4
+27732: Off, E2, Channel: 4
+27852: On, G2, Channel: 4
+27972: Off, G2, Channel: 4
+28212: On, E2, Channel: 4
+28332: Off, E2, Channel: 4
+28572: On, D2, Channel: 4
+28812: Off, D2, Channel: 4
+28812: On, C2, Channel: 4
+29772: Off, C2, Channel: 4
+29772: On, B1, Channel: 4
+30732: Off, B1, Channel: 4
+30732: On, E2, Channel: 4
+31452: Off, E2, Channel: 4
+31452: On, E2, Channel: 4
+31572: Off, E2, Channel: 4
+31692: On, G2, Channel: 4
+31812: Off, G2, Channel: 4
+32052: On, E2, Channel: 4
+32172: Off, E2, Channel: 4
+32412: On, D2, Channel: 4
+32652: Off, D2, Channel: 4
+32652: On, C2, Channel: 4
+33612: Off, C2, Channel: 4
+33612: On, B1, Channel: 4
+34572: Off, B1, Channel: 4
+34572: On, E2, Channel: 4
+35292: Off, E2, Channel: 4
+35292: On, E2, Channel: 4
+35412: Off, E2, Channel: 4
+35532: On, G2, Channel: 4
+35652: Off, G2, Channel: 4
+35892: On, E2, Channel: 4
+36012: Off, E2, Channel: 4
+36252: On, D2, Channel: 4
+36492: Off, D2, Channel: 4
+36492: On, C2, Channel: 4
+37452: Off, C2, Channel: 4
+37452: On, B1, Channel: 4
+38412: Off, B1, Channel: 4
+38412: On, E2, Channel: 4
+39132: Off, E2, Channel: 4
+39132: On, E2, Channel: 4
+39252: Off, E2, Channel: 4
+39372: On, G2, Channel: 4
+39492: Off, G2, Channel: 4
+39732: On, E2, Channel: 4
+39852: Off, E2, Channel: 4
+40092: On, D2, Channel: 4
+40332: Off, D2, Channel: 4
+40332: On, C2, Channel: 4
+41292: Off, C2, Channel: 4
+41292: On, B1, Channel: 4
+42252: Off, B1, Channel: 4
+42252: On, E2, Channel: 4
+42972: Off, E2, Channel: 4
+42972: On, E2, Channel: 4
+43092: Off, E2, Channel: 4
+43212: On, G2, Channel: 4
+43332: Off, G2, Channel: 4
+43572: On, E2, Channel: 4
+43692: Off, E2, Channel: 4
+43932: On, D2, Channel: 4
+44172: Off, D2, Channel: 4
+44172: On, C2, Channel: 4
+45132: Off, C2, Channel: 4
+45132: On, B1, Channel: 4
+46092: Off, B1, Channel: 4
+46092: On, G1, Channel: 4
+46332: Off, G1, Channel: 4
+46332: On, G1, Channel: 4
+46572: Off, G1, Channel: 4
+46572: On, G1, Channel: 4
+46812: Off, G1, Channel: 4
+46812: On, G1, Channel: 4
+47052: Off, G1, Channel: 4
+47052: On, G1, Channel: 4
+47292: Off, G1, Channel: 4
+47292: On, G1, Channel: 4
+47532: Off, G1, Channel: 4
+47532: On, G1, Channel: 4
+47772: Off, G1, Channel: 4
+47772: On, G1, Channel: 4
+48012: Off, G1, Channel: 4
+48012: On, A1, Channel: 4
+48252: Off, A1, Channel: 4
+48252: On, A1, Channel: 4
+48492: Off, A1, Channel: 4
+48492: On, A1, Channel: 4
+48732: Off, A1, Channel: 4
+48732: On, A1, Channel: 4
+48972: Off, A1, Channel: 4
+48972: On, A1, Channel: 4
+49212: Off, A1, Channel: 4
+49212: On, A1, Channel: 4
+49452: Off, A1, Channel: 4
+49452: On, A1, Channel: 4
+49692: Off, A1, Channel: 4
+49692: On, A1, Channel: 4
+49932: Off, A1, Channel: 4
+49932: On, E2, Channel: 4
+50652: Off, E2, Channel: 4
+50652: On, E2, Channel: 4
+50772: Off, E2, Channel: 4
+50892: On, G2, Channel: 4
+51012: Off, G2, Channel: 4
+51252: On, E2, Channel: 4
+51372: Off, E2, Channel: 4
+51612: On, D2, Channel: 4
+51852: Off, D2, Channel: 4
+51852: On, C2, Channel: 4
+52812: Off, C2, Channel: 4
+52812: On, B1, Channel: 4
+53772: Off, B1, Channel: 4
+53772: On, E2, Channel: 4
+54492: Off, E2, Channel: 4
+54492: On, E2, Channel: 4
+54612: Off, E2, Channel: 4
+54732: On, G2, Channel: 4
+54852: Off, G2, Channel: 4
+55092: On, E2, Channel: 4
+55212: Off, E2, Channel: 4
+55452: On, D2, Channel: 4
+55692: Off, D2, Channel: 4
+55692: On, C2, Channel: 4
+56052: Off, C2, Channel: 4
+56052: On, D2, Channel: 4
+56412: Off, D2, Channel: 4
+56412: On, C2, Channel: 4
+56652: Off, C2, Channel: 4
+56652: On, B1, Channel: 4
+57612: Off, B1, Channel: 4
+57612: On, E2, Channel: 4
+58332: Off, E2, Channel: 4
+58332: On, E2, Channel: 4
+58452: Off, E2, Channel: 4
+58572: On, G2, Channel: 4
+58692: Off, G2, Channel: 4
+58932: On, E2, Channel: 4
+59052: Off, E2, Channel: 4
+59292: On, D2, Channel: 4
+59532: Off, D2, Channel: 4
+59532: On, C2, Channel: 4
+60492: Off, C2, Channel: 4
+60492: On, B1, Channel: 4
+61452: Off, B1, Channel: 4
+61452: On, E2, Channel: 4
+62172: Off, E2, Channel: 4
+62172: On, E2, Channel: 4
+62292: Off, E2, Channel: 4
+62412: On, G2, Channel: 4
+62532: Off, G2, Channel: 4
+62772: On, E2, Channel: 4
+62892: Off, E2, Channel: 4
+63132: On, D2, Channel: 4
+63372: Off, D2, Channel: 4
+63372: On, C2, Channel: 4
+63732: Off, C2, Channel: 4
+63732: On, D2, Channel: 4
+64092: Off, D2, Channel: 4
+64092: On, C2, Channel: 4
+64332: Off, C2, Channel: 4
+64332: On, B1, Channel: 4
+65292: Off, B1, Channel: 4
+65292: On, G1, Channel: 4
+65532: Off, G1, Channel: 4
+65532: On, G1, Channel: 4
+65772: Off, G1, Channel: 4
+65772: On, G1, Channel: 4
+66012: Off, G1, Channel: 4
+66012: On, G1, Channel: 4
+66252: Off, G1, Channel: 4
+66252: On, G1, Channel: 4
+66492: Off, G1, Channel: 4
+66492: On, G1, Channel: 4
+66732: Off, G1, Channel: 4
+66732: On, G1, Channel: 4
+66972: Off, G1, Channel: 4
+66972: On, G1, Channel: 4
+67212: Off, G1, Channel: 4
+67212: On, A1, Channel: 4
+67452: Off, A1, Channel: 4
+67452: On, A1, Channel: 4
+67692: Off, A1, Channel: 4
+67692: On, A1, Channel: 4
+67932: Off, A1, Channel: 4
+67932: On, A1, Channel: 4
+68172: Off, A1, Channel: 4
+68172: On, A1, Channel: 4
+68412: Off, A1, Channel: 4
+68412: On, A1, Channel: 4
+68652: Off, A1, Channel: 4
+68652: On, A1, Channel: 4
+68892: Off, A1, Channel: 4
+68892: On, A1, Channel: 4
+69132: Off, A1, Channel: 4
+69132: On, E2, Channel: 4
+69852: Off, E2, Channel: 4
+69852: On, E2, Channel: 4
+69972: Off, E2, Channel: 4
+70092: On, G2, Channel: 4
+70212: Off, G2, Channel: 4
+70452: On, E2, Channel: 4
+70572: Off, E2, Channel: 4
+70812: On, D2, Channel: 4
+71052: Off, D2, Channel: 4
+71052: On, C2, Channel: 4
+72012: Off, C2, Channel: 4
+72012: On, B1, Channel: 4
+72972: Off, B1, Channel: 4
+72972: On, E2, Channel: 4
+73692: Off, E2, Channel: 4
+73692: On, E2, Channel: 4
+73812: Off, E2, Channel: 4
+73932: On, G2, Channel: 4
+74052: Off, G2, Channel: 4
+74292: On, E2, Channel: 4
+74412: Off, E2, Channel: 4
+74652: On, D2, Channel: 4
+74892: Off, D2, Channel: 4
+74892: On, C2, Channel: 4
+75852: Off, C2, Channel: 4
+75852: On, B1, Channel: 4
+76812: Off, B1, Channel: 4
+76812: On, E2, Channel: 4
+77532: Off, E2, Channel: 4
+77532: On, E2, Channel: 4
+77652: Off, E2, Channel: 4
+77772: On, G2, Channel: 4
+77892: Off, G2, Channel: 4
+78132: On, E2, Channel: 4
+78252: Off, E2, Channel: 4
+78492: On, D2, Channel: 4
+78732: Off, D2, Channel: 4
+78732: On, C2, Channel: 4
+79692: Off, C2, Channel: 4
+79692: On, B1, Channel: 4
+80652: Off, B1, Channel: 4
+80652: On, E2, Channel: 4
+81372: Off, E2, Channel: 4
+81372: On, E2, Channel: 4
+81492: Off, E2, Channel: 4
+81612: On, G2, Channel: 4
+81732: Off, G2, Channel: 4
+81972: On, E2, Channel: 4
+82092: Off, E2, Channel: 4
+82332: On, D2, Channel: 4
+82572: Off, D2, Channel: 4
+82572: On, C2, Channel: 4
+83532: Off, C2, Channel: 4
+83532: On, B1, Channel: 4
+84492: Off, B1, Channel: 4
+84492: On, E2, Channel: 4
+85212: Off, E2, Channel: 4
+85212: On, E2, Channel: 4
+85332: Off, E2, Channel: 4
+85452: On, G2, Channel: 4
+85572: Off, G2, Channel: 4
+85812: On, E2, Channel: 4
+85932: Off, E2, Channel: 4
+86172: On, D2, Channel: 4
+86412: Off, D2, Channel: 4
+86412: On, C2, Channel: 4
+87372: Off, C2, Channel: 4
+87372: On, B1, Channel: 4
+88332: Off, B1, Channel: 4
+88332: On, E2, Channel: 4
+89052: Off, E2, Channel: 4
+89052: On, E2, Channel: 4
+89172: Off, E2, Channel: 4
+89292: On, G2, Channel: 4
+89412: Off, G2, Channel: 4
+89652: On, E2, Channel: 4
+89772: Off, E2, Channel: 4
+90012: On, D2, Channel: 4
+90252: Off, D2, Channel: 4
+90252: On, C2, Channel: 4
+91212: Off, C2, Channel: 4
+91212: On, B1, Channel: 4
+92172: Off, B1, Channel: 4
+92172: On, E2, Channel: 4
+92892: Off, E2, Channel: 4
+92892: On, E2, Channel: 4
+93012: Off, E2, Channel: 4
+93132: On, G2, Channel: 4
+93252: Off, G2, Channel: 4
+93492: On, E2, Channel: 4
+93612: Off, E2, Channel: 4
+93852: On, D2, Channel: 4
+94092: Off, D2, Channel: 4
+94092: On, C2, Channel: 4
+95052: Off, C2, Channel: 4
+95052: On, B1, Channel: 4
+96012: Off, B1, Channel: 4
+96012: On, E2, Channel: 4
+96732: Off, E2, Channel: 4
+96732: On, E2, Channel: 4
+96852: Off, E2, Channel: 4
+96972: On, G2, Channel: 4
+97092: Off, G2, Channel: 4
+97332: On, E2, Channel: 4
+97452: Off, E2, Channel: 4
+97692: On, D2, Channel: 4
+97932: Off, D2, Channel: 4
+97932: On, C2, Channel: 4
+98892: Off, C2, Channel: 4
+98892: On, B1, Channel: 4
+99852: Off, B1, Channel: 4
+99852: On, E2, Channel: 4
+100572: Off, E2, Channel: 4
+100572: On, E2, Channel: 4
+100692: Off, E2, Channel: 4
+100812: On, G2, Channel: 4
+100932: Off, G2, Channel: 4
+101172: On, E2, Channel: 4
+101292: Off, E2, Channel: 4
+101532: On, D2, Channel: 4
+101772: Off, D2, Channel: 4
+101772: On, C2, Channel: 4
+102732: Off, C2, Channel: 4
+102732: On, B1, Channel: 4
+103692: Off, B1, Channel: 4
+103692: On, E2, Channel: 4
+104412: Off, E2, Channel: 4
+104412: On, E2, Channel: 4
+104532: Off, E2, Channel: 4
+104652: On, G2, Channel: 4
+104772: Off, G2, Channel: 4
+105012: On, E2, Channel: 4
+105132: Off, E2, Channel: 4
+105372: On, D2, Channel: 4
+105612: Off, D2, Channel: 4
+105612: On, C2, Channel: 4
+106572: Off, C2, Channel: 4
+106572: On, B1, Channel: 4
+107532: Off, B1, Channel: 4
+107532: On, E2, Channel: 4
+108252: Off, E2, Channel: 4
+108252: On, E2, Channel: 4
+108372: Off, E2, Channel: 4
+108492: On, G2, Channel: 4
+108612: Off, G2, Channel: 4
+108852: On, E2, Channel: 4
+108972: Off, E2, Channel: 4
+109212: On, D2, Channel: 4
+109452: Off, D2, Channel: 4
+109452: On, C2, Channel: 4
+110412: Off, C2, Channel: 4
+110412: On, B1, Channel: 4
+111372: Off, B1, Channel: 4
+111372: On, E2, Channel: 4
+112092: Off, E2, Channel: 4
+112092: On, E2, Channel: 4
+112212: Off, E2, Channel: 4
+112332: On, G2, Channel: 4
+112452: Off, G2, Channel: 4
+112692: On, E2, Channel: 4
+112812: Off, E2, Channel: 4
+113052: On, D2, Channel: 4
+113292: Off, D2, Channel: 4
+113292: On, C2, Channel: 4
+114252: Off, C2, Channel: 4
+114252: On, B1, Channel: 4
+115212: Off, B1, Channel: 4
+115212: On, G1, Channel: 4
+115452: Off, G1, Channel: 4
+115452: On, G1, Channel: 4
+115692: Off, G1, Channel: 4
+115692: On, G1, Channel: 4
+115932: Off, G1, Channel: 4
+115932: On, G1, Channel: 4
+116172: Off, G1, Channel: 4
+116172: On, G1, Channel: 4
+116412: Off, G1, Channel: 4
+116412: On, G1, Channel: 4
+116652: Off, G1, Channel: 4
+116652: On, G1, Channel: 4
+116892: Off, G1, Channel: 4
+116892: On, G1, Channel: 4
+117132: Off, G1, Channel: 4
+117132: On, A1, Channel: 4
+117372: Off, A1, Channel: 4
+117372: On, A1, Channel: 4
+117612: Off, A1, Channel: 4
+117612: On, A1, Channel: 4
+117852: Off, A1, Channel: 4
+117852: On, A1, Channel: 4
+118092: Off, A1, Channel: 4
+118092: On, A1, Channel: 4
+118332: Off, A1, Channel: 4
+118332: On, A1, Channel: 4
+118572: Off, A1, Channel: 4
+118572: On, A1, Channel: 4
+118812: Off, A1, Channel: 4
+118812: On, A1, Channel: 4
+119052: Off, A1, Channel: 4
+119052: On, E2, Channel: 4
+119772: Off, E2, Channel: 4
+119772: On, E2, Channel: 4
+119892: Off, E2, Channel: 4
+120012: On, G2, Channel: 4
+120132: Off, G2, Channel: 4
+120372: On, E2, Channel: 4
+120492: Off, E2, Channel: 4
+120732: On, D2, Channel: 4
+120972: Off, D2, Channel: 4
+120972: On, C2, Channel: 4
+121932: Off, C2, Channel: 4
+121932: On, B1, Channel: 4
+122892: Off, B1, Channel: 4
+122892: On, E2, Channel: 4
+123612: Off, E2, Channel: 4
+123612: On, E2, Channel: 4
+123732: Off, E2, Channel: 4
+123852: On, G2, Channel: 4
+123972: Off, G2, Channel: 4
+124212: On, E2, Channel: 4
+124332: Off, E2, Channel: 4
+124572: On, D2, Channel: 4
+124812: Off, D2, Channel: 4
+124812: On, C2, Channel: 4
+125172: Off, C2, Channel: 4
+125172: On, D2, Channel: 4
+125532: Off, D2, Channel: 4
+125532: On, C2, Channel: 4
+125772: Off, C2, Channel: 4
+125772: On, B1, Channel: 4
+126732: Off, B1, Channel: 4
+126732: On, E2, Channel: 4
+127452: Off, E2, Channel: 4
+127452: On, E2, Channel: 4
+127572: Off, E2, Channel: 4
+127692: On, G2, Channel: 4
+127812: Off, G2, Channel: 4
+128052: On, E2, Channel: 4
+128172: Off, E2, Channel: 4
+128412: On, D2, Channel: 4
+128652: Off, D2, Channel: 4
+128652: On, C2, Channel: 4
+129612: Off, C2, Channel: 4
+129612: On, B1, Channel: 4
+130572: Off, B1, Channel: 4
+130572: On, E2, Channel: 4
+131292: Off, E2, Channel: 4
+131292: On, E2, Channel: 4
+131412: Off, E2, Channel: 4
+131532: On, G2, Channel: 4
+131652: Off, G2, Channel: 4
+131892: On, E2, Channel: 4
+132012: Off, E2, Channel: 4
+132252: On, D2, Channel: 4
+132492: Off, D2, Channel: 4
+132492: On, C2, Channel: 4
+132852: Off, C2, Channel: 4
+132852: On, D2, Channel: 4
+133212: Off, D2, Channel: 4
+133212: On, C2, Channel: 4
+133452: Off, C2, Channel: 4
+133452: On, B1, Channel: 4
+134412: Off, B1, Channel: 4
+134412: On, E2, Channel: 4
+135132: Off, E2, Channel: 4
+135132: On, E2, Channel: 4
+135252: Off, E2, Channel: 4
+135372: On, G2, Channel: 4
+135492: Off, G2, Channel: 4
+135732: On, E2, Channel: 4
+135852: Off, E2, Channel: 4
+136092: On, D2, Channel: 4
+136332: Off, D2, Channel: 4
+136332: On, C2, Channel: 4
+137292: Off, C2, Channel: 4
+137292: On, B1, Channel: 4
+138252: Off, B1, Channel: 4
+138252: On, E2, Channel: 4
+138972: Off, E2, Channel: 4
+138972: On, E2, Channel: 4
+139092: Off, E2, Channel: 4
+139212: On, G2, Channel: 4
+139332: Off, G2, Channel: 4
+139572: On, E2, Channel: 4
+139692: Off, E2, Channel: 4
+139932: On, D2, Channel: 4
+140172: Off, D2, Channel: 4
+140172: On, C2, Channel: 4
+140532: Off, C2, Channel: 4
+140532: On, D2, Channel: 4
+140892: Off, D2, Channel: 4
+140892: On, C2, Channel: 4
+141132: Off, C2, Channel: 4
+141132: On, B1, Channel: 4
+142092: Off, B1, Channel: 4
+142092: On, E2, Channel: 4
+142812: Off, E2, Channel: 4
+142812: On, E2, Channel: 4
+142932: Off, E2, Channel: 4
+143052: On, G2, Channel: 4
+143172: Off, G2, Channel: 4
+143412: On, E2, Channel: 4
+143532: Off, E2, Channel: 4
+143772: On, D2, Channel: 4
+144012: Off, D2, Channel: 4
+144012: On, C2, Channel: 4
+144972: Off, C2, Channel: 4
+144972: On, B1, Channel: 4
+145932: Off, B1, Channel: 4
+145932: On, E2, Channel: 4
+146652: Off, E2, Channel: 4
+146652: On, E2, Channel: 4
+146772: Off, E2, Channel: 4
+146892: On, G2, Channel: 4
+147012: Off, G2, Channel: 4
+147252: On, E2, Channel: 4
+147372: Off, E2, Channel: 4
+147612: On, D2, Channel: 4
+147852: Off, D2, Channel: 4
+147852: On, C2, Channel: 4
+148212: Off, C2, Channel: 4
+148212: On, D2, Channel: 4
+148572: Off, D2, Channel: 4
+148572: On, C2, Channel: 4
+148812: Off, C2, Channel: 4
+148812: On, B1, Channel: 4
+149772: Off, B1, Channel: 4
+149772: On, G1, Channel: 4
+150012: Off, G1, Channel: 4
+150012: On, G1, Channel: 4
+150252: Off, G1, Channel: 4
+150252: On, G1, Channel: 4
+150492: Off, G1, Channel: 4
+150492: On, G1, Channel: 4
+150732: Off, G1, Channel: 4
+150732: On, G1, Channel: 4
+150972: Off, G1, Channel: 4
+150972: On, G1, Channel: 4
+151212: Off, G1, Channel: 4
+151212: On, G1, Channel: 4
+151452: Off, G1, Channel: 4
+151452: On, G1, Channel: 4
+151692: Off, G1, Channel: 4
+151692: On, A1, Channel: 4
+151932: Off, A1, Channel: 4
+151932: On, A1, Channel: 4
+152172: Off, A1, Channel: 4
+152172: On, A1, Channel: 4
+152412: Off, A1, Channel: 4
+152412: On, A1, Channel: 4
+152652: Off, A1, Channel: 4
+152652: On, A1, Channel: 4
+152892: Off, A1, Channel: 4
+152892: On, A1, Channel: 4
+153132: Off, A1, Channel: 4
+153132: On, A1, Channel: 4
+153372: Off, A1, Channel: 4
+153372: On, A1, Channel: 4
+153612: Off, A1, Channel: 4
+153612: On, E2, Channel: 4
+154332: Off, E2, Channel: 4
+154332: On, E2, Channel: 4
+154452: Off, E2, Channel: 4
+154572: On, G2, Channel: 4
+154692: Off, G2, Channel: 4
+154932: On, E2, Channel: 4
+155052: Off, E2, Channel: 4
+155292: On, D2, Channel: 4
+155532: Off, D2, Channel: 4
+155532: On, C2, Channel: 4
+156492: Off, C2, Channel: 4
+156492: On, B1, Channel: 4
+157452: Off, B1, Channel: 4
+157452: On, E2, Channel: 4
+158172: Off, E2, Channel: 4
+158172: On, E2, Channel: 4
+158292: Off, E2, Channel: 4
+158412: On, G2, Channel: 4
+158532: Off, G2, Channel: 4
+158772: On, E2, Channel: 4
+158892: Off, E2, Channel: 4
+159132: On, D2, Channel: 4
+159372: Off, D2, Channel: 4
+159372: On, C2, Channel: 4
+160332: Off, C2, Channel: 4
+160332: On, B1, Channel: 4
+161292: Off, B1, Channel: 4
+161292: On, E2, Channel: 4
+162012: Off, E2, Channel: 4
+162012: On, E2, Channel: 4
+162132: Off, E2, Channel: 4
+162252: On, G2, Channel: 4
+162372: Off, G2, Channel: 4
+162612: On, E2, Channel: 4
+162732: Off, E2, Channel: 4
+162972: On, D2, Channel: 4
+163212: Off, D2, Channel: 4
+163212: On, C2, Channel: 4
+164172: Off, C2, Channel: 4
+164172: On, B1, Channel: 4
+165132: Off, B1, Channel: 4
+165132: On, E2, Channel: 4
+165852: Off, E2, Channel: 4
+165852: On, E2, Channel: 4
+165972: Off, E2, Channel: 4
+166092: On, G2, Channel: 4
+166212: Off, G2, Channel: 4
+166452: On, E2, Channel: 4
+166572: Off, E2, Channel: 4
+166812: On, D2, Channel: 4
+167052: Off, D2, Channel: 4
+167052: On, C2, Channel: 4
+168012: Off, C2, Channel: 4
+168012: On, B1, Channel: 4
+168972: Off, B1, Channel: 4
+168972: On, E2, Channel: 4
+169692: Off, E2, Channel: 4
+169692: On, E2, Channel: 4
+169812: Off, E2, Channel: 4
+169932: On, G2, Channel: 4
+170052: Off, G2, Channel: 4
+170292: On, E2, Channel: 4
+170412: Off, E2, Channel: 4
+170652: On, D2, Channel: 4
+170892: Off, D2, Channel: 4
+170892: On, C2, Channel: 4
+171852: Off, C2, Channel: 4
+171852: On, B1, Channel: 4
+172812: Off, B1, Channel: 4
+172812: On, E2, Channel: 4
+173532: Off, E2, Channel: 4
+173532: On, E2, Channel: 4
+173652: Off, E2, Channel: 4
+173772: On, G2, Channel: 4
+173892: Off, G2, Channel: 4
+174132: On, E2, Channel: 4
+174252: Off, E2, Channel: 4
+174492: On, D2, Channel: 4
+174732: Off, D2, Channel: 4
+174732: On, C2, Channel: 4
+175692: Off, C2, Channel: 4
+175692: On, B1, Channel: 4
+176652: Off, B1, Channel: 4
+176652: On, E2, Channel: 4
+177372: Off, E2, Channel: 4
+177372: On, E2, Channel: 4
+177492: Off, E2, Channel: 4
+177612: On, G2, Channel: 4
+177732: Off, G2, Channel: 4
+177972: On, E2, Channel: 4
+178092: Off, E2, Channel: 4
+178332: On, D2, Channel: 4
+178572: Off, D2, Channel: 4
+178572: On, C2, Channel: 4
+179532: Off, C2, Channel: 4
+179532: On, B1, Channel: 4
+180492: Off, B1, Channel: 4
+180492: On, E2, Channel: 4
+181212: Off, E2, Channel: 4
+181212: On, E2, Channel: 4
+181332: Off, E2, Channel: 4
+181452: On, G2, Channel: 4
+181572: Off, G2, Channel: 4
+181812: On, E2, Channel: 4
+181932: Off, E2, Channel: 4
+182172: On, D2, Channel: 4
+182412: Off, D2, Channel: 4
+182412: On, C2, Channel: 4
+183372: Off, C2, Channel: 4
+183372: On, B1, Channel: 4
+184332: Off, B1, Channel: 4
+184332: On, E2, Channel: 4
+185052: Off, E2, Channel: 4
+185052: On, E2, Channel: 4
+185172: Off, E2, Channel: 4
+185292: On, G2, Channel: 4
+185412: Off, G2, Channel: 4
+185652: On, E2, Channel: 4
+185772: Off, E2, Channel: 4
+186012: On, D2, Channel: 4
+186252: Off, D2, Channel: 4
+186252: On, C2, Channel: 4
+187212: Off, C2, Channel: 4
+187212: On, B1, Channel: 4
+188172: Off, B1, Channel: 4
+188172: On, E2, Channel: 4
+188892: Off, E2, Channel: 4
+188892: On, E2, Channel: 4
+189012: Off, E2, Channel: 4
+189132: On, G2, Channel: 4
+189252: Off, G2, Channel: 4
+189492: On, E2, Channel: 4
+189612: Off, E2, Channel: 4
+189852: On, D2, Channel: 4
+190092: Off, D2, Channel: 4
+190092: On, C2, Channel: 4
+191052: Off, C2, Channel: 4
+191052: On, B1, Channel: 4
+192012: Off, B1, Channel: 4
+192012: On, E2, Channel: 4
+192732: Off, E2, Channel: 4
+192732: On, E2, Channel: 4
+192852: Off, E2, Channel: 4
+192972: On, G2, Channel: 4
+193092: Off, G2, Channel: 4
+193332: On, E2, Channel: 4
+193452: Off, E2, Channel: 4
+193692: On, D2, Channel: 4
+193932: Off, D2, Channel: 4
+193932: On, C2, Channel: 4
+194892: Off, C2, Channel: 4
+194892: On, B1, Channel: 4
+195852: Off, B1, Channel: 4
+195852: On, G1, Channel: 4
+196092: Off, G1, Channel: 4
+196092: On, G1, Channel: 4
+196332: Off, G1, Channel: 4
+196332: On, G1, Channel: 4
+196572: Off, G1, Channel: 4
+196572: On, G1, Channel: 4
+196812: Off, G1, Channel: 4
+196812: On, G1, Channel: 4
+197052: Off, G1, Channel: 4
+197052: On, G1, Channel: 4
+197292: Off, G1, Channel: 4
+197292: On, G1, Channel: 4
+197532: Off, G1, Channel: 4
+197532: On, G1, Channel: 4
+197772: Off, G1, Channel: 4
+197772: On, A1, Channel: 4
+198012: Off, A1, Channel: 4
+198012: On, A1, Channel: 4
+198252: Off, A1, Channel: 4
+198252: On, A1, Channel: 4
+198492: Off, A1, Channel: 4
+198492: On, A1, Channel: 4
+198732: Off, A1, Channel: 4
+198732: On, A1, Channel: 4
+198972: Off, A1, Channel: 4
+198972: On, A1, Channel: 4
+199212: Off, A1, Channel: 4
+199212: On, A1, Channel: 4
+199452: Off, A1, Channel: 4
+199452: On, A1, Channel: 4
+199692: Off, A1, Channel: 4
+199692: On, E2, Channel: 4
+200412: Off, E2, Channel: 4
+200412: On, E2, Channel: 4
+200532: Off, E2, Channel: 4
+200652: On, G2, Channel: 4
+200772: Off, G2, Channel: 4
+201012: On, E2, Channel: 4
+201132: Off, E2, Channel: 4
+201372: On, D2, Channel: 4
+201612: Off, D2, Channel: 4
+201612: On, C2, Channel: 4
+202572: Off, C2, Channel: 4
+202572: On, B1, Channel: 4
+203532: Off, B1, Channel: 4
+203532: On, E2, Channel: 4
+204252: Off, E2, Channel: 4
+204252: On, E2, Channel: 4
+204372: Off, E2, Channel: 4
+204492: On, G2, Channel: 4
+204612: Off, G2, Channel: 4
+204852: On, E2, Channel: 4
+204972: Off, E2, Channel: 4
+205212: On, D2, Channel: 4
+205452: Off, D2, Channel: 4
+205452: On, C2, Channel: 4
+205812: Off, C2, Channel: 4
+205812: On, D2, Channel: 4
+206172: Off, D2, Channel: 4
+206172: On, C2, Channel: 4
+206412: Off, C2, Channel: 4
+206412: On, B1, Channel: 4
+207372: Off, B1, Channel: 4
+207372: On, E2, Channel: 4
+208092: Off, E2, Channel: 4
+208092: On, E2, Channel: 4
+208212: Off, E2, Channel: 4
+208332: On, G2, Channel: 4
+208452: Off, G2, Channel: 4
+208692: On, E2, Channel: 4
+208812: Off, E2, Channel: 4
+209052: On, D2, Channel: 4
+209292: Off, D2, Channel: 4
+209292: On, C2, Channel: 4
+210252: Off, C2, Channel: 4
+210252: On, B1, Channel: 4
+211212: Off, B1, Channel: 4
+211212: On, E2, Channel: 4
+211932: Off, E2, Channel: 4
+211932: On, E2, Channel: 4
+212052: Off, E2, Channel: 4
+212172: On, G2, Channel: 4
+212292: Off, G2, Channel: 4
+212532: On, E2, Channel: 4
+212652: Off, E2, Channel: 4
+212892: On, D2, Channel: 4
+213132: Off, D2, Channel: 4
+213132: On, C2, Channel: 4
+213492: Off, C2, Channel: 4
+213492: On, D2, Channel: 4
+213852: Off, D2, Channel: 4
+213852: On, C2, Channel: 4
+214092: Off, C2, Channel: 4
+214092: On, B1, Channel: 4
+215052: Off, B1, Channel: 4
+215052: On, E2, Channel: 4
+216972: Off, E2, Channel: 4
+216972: End of track 
+
+Start of track 5 at Byte 11955
+Track length: 7042
+0: Sequence/Track Name event
+0: Control change event, Channel: 9
+6: Pitch wheel event, Channel: 9
+6: Program change event, Channel: 9
+6: Control change event, Channel: 9
+255: Control change event, Channel: 12
+910: Off, G#2, Channel: 9
+1026: On, G#2, Channel: 9
+1637: Off, G#2, Channel: 9
+1753: On, G#2, Channel: 9
+2364: Off, G#2, Channel: 9
+2480: On, G#2, Channel: 9
+3091: Off, G#2, Channel: 9
+3207: On, G#2, Channel: 9
+3818: Off, G#2, Channel: 9
+3934: On, G#2, Channel: 9
+4545: Off, G#2, Channel: 9
+4661: On, G#2, Channel: 9
+5272: Off, G#2, Channel: 9
+5388: On, G#2, Channel: 9
+5999: Off, G#2, Channel: 9
+6115: On, G#2, Channel: 9
+6726: Off, G#2, Channel: 9
+6842: On, G#2, Channel: 9
+7453: Off, G#2, Channel: 9
+7569: On, G#2, Channel: 9
+8180: Off, G#2, Channel: 9
+8296: On, G#2, Channel: 9
+8907: Off, G#2, Channel: 9
+9023: On, G#2, Channel: 9
+9634: Off, G#2, Channel: 9
+9750: On, G#2, Channel: 9
+10361: Off, G#2, Channel: 9
+10477: On, G#2, Channel: 9
+11088: Off, G#2, Channel: 9
+11204: On, G#2, Channel: 9
+11815: Off, G#2, Channel: 9
+11931: On, G#2, Channel: 9
+12542: Off, G#2, Channel: 9
+12658: On, G#2, Channel: 9
+13269: Off, G#2, Channel: 9
+13385: On, G#2, Channel: 9
+13996: Off, G#2, Channel: 9
+14112: On, G#2, Channel: 9
+14723: Off, G#2, Channel: 9
+14839: On, G#2, Channel: 9
+15450: Off, G#2, Channel: 9
+15566: On, G#2, Channel: 9
+16177: Off, G#2, Channel: 9
+16293: On, G#2, Channel: 9
+16904: Off, G#2, Channel: 9
+17020: On, G#2, Channel: 9
+17631: Off, G#2, Channel: 9
+17747: On, G#2, Channel: 9
+18358: Off, G#2, Channel: 9
+18474: On, G#2, Channel: 9
+19085: Off, G#2, Channel: 9
+19201: On, G#2, Channel: 9
+19812: Off, G#2, Channel: 9
+19928: On, G#2, Channel: 9
+20539: Off, G#2, Channel: 9
+20655: On, G#2, Channel: 9
+21266: Off, G#2, Channel: 9
+21382: On, G#2, Channel: 9
+21993: Off, G#2, Channel: 9
+22109: On, G#2, Channel: 9
+22720: Off, G#2, Channel: 9
+22836: On, G#2, Channel: 9
+23447: Off, G#2, Channel: 9
+23563: On, G#2, Channel: 9
+24174: Off, G#2, Channel: 9
+24290: On, G#2, Channel: 9
+24901: Off, G#2, Channel: 9
+25017: On, G#2, Channel: 9
+25628: Off, G#2, Channel: 9
+25744: On, G#2, Channel: 9
+26355: Off, G#2, Channel: 9
+26471: On, G#2, Channel: 9
+27082: Off, G#2, Channel: 9
+27198: On, G#2, Channel: 9
+27809: Off, G#2, Channel: 9
+27925: On, G#2, Channel: 9
+28536: Off, G#2, Channel: 9
+28652: On, G#2, Channel: 9
+29263: Off, G#2, Channel: 9
+29379: On, G#2, Channel: 9
+29990: Off, G#2, Channel: 9
+30106: On, G#2, Channel: 9
+30717: Off, G#2, Channel: 9
+30833: On, G#2, Channel: 9
+31444: Off, G#2, Channel: 9
+31560: On, G#2, Channel: 9
+32171: Off, G#2, Channel: 9
+32287: On, G#2, Channel: 9
+32898: Off, G#2, Channel: 9
+33014: On, G#2, Channel: 9
+33625: Off, G#2, Channel: 9
+33741: On, G#2, Channel: 9
+34352: Off, G#2, Channel: 9
+34468: On, G#2, Channel: 9
+35079: Off, G#2, Channel: 9
+35195: On, G#2, Channel: 9
+35290: Off, C7, Channel: 3
+38753: Off, C7, Channel: 3
+42216: Off, C7, Channel: 3
+45679: Off, C7, Channel: 3
+49142: Off, C7, Channel: 3
+52605: Off, C7, Channel: 3
+56068: Off, C7, Channel: 3
+59531: Off, C7, Channel: 3
+62994: Off, C7, Channel: 3
+66457: Off, C7, Channel: 3
+69920: Off, C7, Channel: 3
+73383: Off, C7, Channel: 3
+76846: Off, C7, Channel: 3
+80309: Off, C7, Channel: 3
+83772: Off, C7, Channel: 3
+87235: Off, C7, Channel: 3
+90698: Off, C7, Channel: 3
+94161: Off, C7, Channel: 3
+97624: Off, C7, Channel: 3
+101087: Off, C7, Channel: 3
+104550: Off, C7, Channel: 3
+108013: Off, C7, Channel: 3
+111476: Off, C7, Channel: 3
+114939: Off, C7, Channel: 3
+118402: Off, C7, Channel: 3
+121865: Off, C7, Channel: 3
+125328: Off, C7, Channel: 3
+128791: Off, C7, Channel: 3
+132254: Off, C7, Channel: 3
+135717: Off, C7, Channel: 3
+139180: Off, C7, Channel: 3
+142643: Off, C7, Channel: 3
+146119: Off, C7, Channel: 3
+149978: Off, F#2, Channel: 9
+149978: On, F#2, Channel: 9
+150458: Off, F#2, Channel: 9
+150458: On, F#2, Channel: 9
+150938: Off, F#2, Channel: 9
+150938: On, A3, Channel: 9
+151033: Off, C7, Channel: 3
+154892: Off, F#2, Channel: 9
+154892: On, F#2, Channel: 9
+155372: Off, F#2, Channel: 9
+155372: On, F#2, Channel: 9
+155852: Off, F#2, Channel: 9
+155852: On, A3, Channel: 9
+155947: Off, C7, Channel: 3
+159436: Off, C7, Channel: 3
+162925: Off, C7, Channel: 3
+166414: Off, C7, Channel: 3
+169903: Off, C7, Channel: 3
+173392: Off, C7, Channel: 3
+176881: Off, C7, Channel: 3
+180370: Off, C7, Channel: 3
+183859: Off, C7, Channel: 3
+187348: Off, E8, Channel: 1
+187386: On, C2, Channel: 9
+187626: Off, A3, Channel: 9
+191058: Off, C7, Channel: 3
+194547: Off, E8, Channel: 1
+194583: On, D2, Channel: 9
+194823: Off, A3, Channel: 9
+198255: Off, C7, Channel: 3
+201744: Off, C7, Channel: 3
+205233: Off, C7, Channel: 3
+208722: Off, C7, Channel: 3
+212211: Off, C7, Channel: 3
+215700: Off, C7, Channel: 3
+219189: Off, C7, Channel: 3
+222678: Off, C7, Channel: 3
+226167: Off, C7, Channel: 3
+229656: Off, C7, Channel: 3
+233145: Off, C7, Channel: 3
+236634: Off, C7, Channel: 3
+240123: Off, C7, Channel: 3
+243612: Off, E8, Channel: 1
+243650: On, C2, Channel: 9
+243890: Off, A3, Channel: 9
+247322: Off, C7, Channel: 3
+250811: Off, E8, Channel: 1
+250847: On, D2, Channel: 9
+251087: Off, A3, Channel: 9
+254519: Off, C7, Channel: 3
+258008: Off, C7, Channel: 3
+261497: Off, C7, Channel: 3
+264986: Off, C7, Channel: 3
+268475: Off, C7, Channel: 3
+272334: Off, F#2, Channel: 9
+272334: On, F#2, Channel: 9
+272814: Off, F#2, Channel: 9
+272814: On, F#2, Channel: 9
+273294: Off, F#2, Channel: 9
+273294: On, A3, Channel: 9
+273389: Off, C7, Channel: 3
+277248: Off, F#2, Channel: 9
+277248: On, F#2, Channel: 9
+277728: Off, F#2, Channel: 9
+277728: On, F#2, Channel: 9
+278208: Off, F#2, Channel: 9
+278208: On, A3, Channel: 9
+278303: Off, C-1, Channel: 15
+278440: Polyphonic key pressure event, Channel: 13
+279095: Off, G#2, Channel: 9
+279211: On, G#2, Channel: 9
+279822: Off, G#2, Channel: 9
+279938: On, G#2, Channel: 9
+280549: Off, G#2, Channel: 9
+280665: On, G#2, Channel: 9
+281276: Off, G#2, Channel: 9
+281392: On, G#2, Channel: 9
+282003: Off, G#2, Channel: 9
+282119: On, G#2, Channel: 9
+282730: Off, G#2, Channel: 9
+282846: On, G#2, Channel: 9
+283457: Off, G#2, Channel: 9
+283573: On, G#2, Channel: 9
+284184: Off, G#2, Channel: 9
+284300: On, G#2, Channel: 9
+284911: Off, G#2, Channel: 9
+285027: On, G#2, Channel: 9
+285638: Off, G#2, Channel: 9
+285754: On, G#2, Channel: 9
+286365: Off, G#2, Channel: 9
+286481: On, G#2, Channel: 9
+287092: Off, G#2, Channel: 9
+287208: On, G#2, Channel: 9
+287819: Off, G#2, Channel: 9
+287935: On, G#2, Channel: 9
+288546: Off, G#2, Channel: 9
+288662: On, G#2, Channel: 9
+289273: Off, G#2, Channel: 9
+289389: On, G#2, Channel: 9
+290000: Off, G#2, Channel: 9
+290116: On, G#2, Channel: 9
+290727: Off, G#2, Channel: 9
+290843: On, G#2, Channel: 9
+291454: Off, G#2, Channel: 9
+291570: On, G#2, Channel: 9
+292181: Off, G#2, Channel: 9
+292297: On, G#2, Channel: 9
+292908: Off, G#2, Channel: 9
+293024: On, G#2, Channel: 9
+293635: Off, G#2, Channel: 9
+293751: On, G#2, Channel: 9
+294362: Off, G#2, Channel: 9
+294478: On, G#2, Channel: 9
+295089: Off, G#2, Channel: 9
+295205: On, G#2, Channel: 9
+295816: Off, G#2, Channel: 9
+295932: On, G#2, Channel: 9
+296543: Off, G#2, Channel: 9
+296659: On, G#2, Channel: 9
+297270: Off, G#2, Channel: 9
+297386: On, G#2, Channel: 9
+297997: Off, G#2, Channel: 9
+298113: On, G#2, Channel: 9
+298724: Off, G#2, Channel: 9
+298840: On, G#2, Channel: 9
+299451: Off, G#2, Channel: 9
+299567: On, G#2, Channel: 9
+300178: Off, G#2, Channel: 9
+300294: On, G#2, Channel: 9
+300905: Off, G#2, Channel: 9
+301021: On, G#2, Channel: 9
+301632: Off, G#2, Channel: 9
+301748: On, G#2, Channel: 9
+302359: Off, G#2, Channel: 9
+302475: On, G#2, Channel: 9
+303086: Off, G#2, Channel: 9
+303202: On, G#2, Channel: 9
+303813: Off, G#2, Channel: 9
+303929: On, G#2, Channel: 9
+304540: Off, G#2, Channel: 9
+304656: On, G#2, Channel: 9
+305267: Off, G#2, Channel: 9
+305383: On, G#2, Channel: 9
+305994: Off, G#2, Channel: 9
+306110: On, G#2, Channel: 9
+306721: Off, G#2, Channel: 9
+306837: On, G#2, Channel: 9
+307448: Off, G#2, Channel: 9
+307564: On, G#2, Channel: 9
+308175: Off, G#2, Channel: 9
+308291: On, G#2, Channel: 9
+308902: Off, G#2, Channel: 9
+309018: On, G#2, Channel: 9
+309629: Off, G#2, Channel: 9
+309745: On, G#2, Channel: 9
+310356: Off, G#2, Channel: 9
+310472: On, G#2, Channel: 9
+311083: Off, G#2, Channel: 9
+311199: On, G#2, Channel: 9
+311810: Off, G#2, Channel: 9
+311926: On, G#2, Channel: 9
+312537: Off, G#2, Channel: 9
+312653: On, G#2, Channel: 9
+313264: Off, G#2, Channel: 9
+313380: On, G#2, Channel: 9
+313475: Off, C7, Channel: 3
+316938: Off, C7, Channel: 3
+320401: Off, C7, Channel: 3
+323864: Off, C7, Channel: 3
+327327: Off, C7, Channel: 3
+330790: Off, C7, Channel: 3
+334253: Off, C7, Channel: 3
+337716: Off, C7, Channel: 3
+341179: Off, C7, Channel: 3
+344642: Off, C7, Channel: 3
+348105: Off, C7, Channel: 3
+351568: Off, C7, Channel: 3
+355031: Off, C7, Channel: 3
+358494: Off, C7, Channel: 3
+361957: Off, C7, Channel: 3
+365420: Off, C7, Channel: 3
+368883: Off, C7, Channel: 3
+372346: Off, C7, Channel: 3
+375809: Off, C7, Channel: 3
+379272: Off, C7, Channel: 3
+382735: Off, C7, Channel: 3
+386198: Off, C7, Channel: 3
+389661: Off, C7, Channel: 3
+393124: Off, C7, Channel: 3
+396587: Off, C7, Channel: 3
+400050: Off, C7, Channel: 3
+403513: Off, C7, Channel: 3
+406976: Off, C7, Channel: 3
+410439: Off, C7, Channel: 3
+413902: Off, C7, Channel: 3
+417365: Off, C7, Channel: 3
+420828: Off, C7, Channel: 3
+424304: Off, C7, Channel: 3
+428163: Off, F#2, Channel: 9
+428163: On, F#2, Channel: 9
+428643: Off, F#2, Channel: 9
+428643: On, F#2, Channel: 9
+429123: Off, F#2, Channel: 9
+429123: On, A3, Channel: 9
+429218: Off, C7, Channel: 3
+433077: Off, F#2, Channel: 9
+433077: On, F#2, Channel: 9
+433557: Off, F#2, Channel: 9
+433557: On, F#2, Channel: 9
+434037: Off, F#2, Channel: 9
+434037: On, A3, Channel: 9
+434132: Off, C7, Channel: 3
+437621: Off, C7, Channel: 3
+441110: Off, C7, Channel: 3
+444599: Off, C7, Channel: 3
+448088: Off, C7, Channel: 3
+451577: Off, C7, Channel: 3
+455066: Off, C7, Channel: 3
+458555: Off, C7, Channel: 3
+462044: Off, C7, Channel: 3
+465533: Off, E8, Channel: 1
+465571: On, C2, Channel: 9
+465811: Off, A3, Channel: 9
+469243: Off, C7, Channel: 3
+472732: Off, E8, Channel: 1
+472768: On, D2, Channel: 9
+473008: Off, A3, Channel: 9
+476440: Off, C7, Channel: 3
+479929: Off, C7, Channel: 3
+483418: Off, C7, Channel: 3
+486907: Off, C7, Channel: 3
+490396: Off, C7, Channel: 3
+493885: Off, C7, Channel: 3
+497374: Off, C7, Channel: 3
+500863: Off, C7, Channel: 3
+504352: Off, C7, Channel: 3
+507841: Off, C7, Channel: 3
+511330: Off, C7, Channel: 3
+514819: Off, C7, Channel: 3
+518308: Off, C7, Channel: 3
+521797: Off, E8, Channel: 1
+521835: On, C2, Channel: 9
+522075: Off, A3, Channel: 9
+525507: Off, C7, Channel: 3
+528996: Off, E8, Channel: 1
+529032: On, D2, Channel: 9
+529272: Off, A3, Channel: 9
+532704: Off, C7, Channel: 3
+536193: Off, C7, Channel: 3
+539682: Off, C7, Channel: 3
+543171: Off, C7, Channel: 3
+546660: Off, C7, Channel: 3
+550149: Off, C7, Channel: 3
+553638: Off, C7, Channel: 3
+557127: Off, C7, Channel: 3
+560616: Off, C7, Channel: 3
+564105: Off, C7, Channel: 3
+567594: Off, C7, Channel: 3
+571083: Off, C7, Channel: 3
+574572: Off, C7, Channel: 3
+578061: Off, E8, Channel: 1
+578099: On, C2, Channel: 9
+578339: Off, A3, Channel: 9
+581771: Off, C7, Channel: 3
+585260: Off, E8, Channel: 1
+585296: On, D2, Channel: 9
+585536: Off, A3, Channel: 9
+588968: Off, C7, Channel: 3
+592457: Off, C7, Channel: 3
+595946: Off, C7, Channel: 3
+599435: Off, C7, Channel: 3
+602924: Off, C7, Channel: 3
+606413: Off, C7, Channel: 3
+609902: Off, C7, Channel: 3
+613391: Off, C7, Channel: 3
+616880: Off, C7, Channel: 3
+620369: Off, C7, Channel: 3
+623858: Off, C7, Channel: 3
+627347: Off, C7, Channel: 3
+630836: Off, C7, Channel: 3
+634325: Off, E8, Channel: 1
+634363: On, C2, Channel: 9
+634603: Off, A3, Channel: 9
+638035: Off, C7, Channel: 3
+641524: Off, E8, Channel: 1
+641560: On, D2, Channel: 9
+641800: Off, A3, Channel: 9
+645232: Off, C7, Channel: 3
+648721: Off, C7, Channel: 3
+652210: Off, C7, Channel: 3
+655699: Off, C7, Channel: 3
+659188: Off, C7, Channel: 3
+663047: Off, F#2, Channel: 9
+663047: On, F#2, Channel: 9
+663527: Off, F#2, Channel: 9
+663527: On, F#2, Channel: 9
+664007: Off, F#2, Channel: 9
+664007: On, A3, Channel: 9
+664102: Off, C7, Channel: 3
+667961: Off, F#2, Channel: 9
+667961: On, F#2, Channel: 9
+668441: Off, F#2, Channel: 9
+668441: On, F#2, Channel: 9
+668921: Off, F#2, Channel: 9
+672761: On, G#2, Channel: 9
+673372: Off, G#2, Channel: 9
+673488: On, G#2, Channel: 9
+674099: Off, G#2, Channel: 9
+674215: On, G#2, Channel: 9
+674826: Off, G#2, Channel: 9
+674942: On, G#2, Channel: 9
+675553: Off, G#2, Channel: 9
+675669: On, G#2, Channel: 9
+676280: Off, G#2, Channel: 9
+676396: On, G#2, Channel: 9
+677007: Off, G#2, Channel: 9
+677123: On, G#2, Channel: 9
+677734: Off, G#2, Channel: 9
+677850: On, G#2, Channel: 9
+678461: Off, G#2, Channel: 9
+678577: On, G#2, Channel: 9
+679188: Off, G#2, Channel: 9
+679304: On, G#2, Channel: 9
+679915: Off, G#2, Channel: 9
+680031: On, G#2, Channel: 9
+680642: Off, G#2, Channel: 9
+680758: On, G#2, Channel: 9
+681369: Off, G#2, Channel: 9
+681485: On, G#2, Channel: 9
+682096: Off, G#2, Channel: 9
+682212: On, G#2, Channel: 9
+682823: Off, G#2, Channel: 9
+682939: On, G#2, Channel: 9
+683550: Off, G#2, Channel: 9
+683666: On, G#2, Channel: 9
+684277: Off, G#2, Channel: 9
+684393: On, G#2, Channel: 9
+685004: Off, G#2, Channel: 9
+685120: On, G#2, Channel: 9
+685731: Off, G#2, Channel: 9
+685847: On, G#2, Channel: 9
+686458: Off, G#2, Channel: 9
+686574: On, G#2, Channel: 9
+687185: Off, G#2, Channel: 9
+687301: On, G#2, Channel: 9
+687912: Off, G#2, Channel: 9
+688028: On, G#2, Channel: 9
+688639: Off, G#2, Channel: 9
+688755: On, G#2, Channel: 9
+689366: Off, G#2, Channel: 9
+689482: On, G#2, Channel: 9
+690093: Off, G#2, Channel: 9
+690209: On, G#2, Channel: 9
+690820: Off, G#2, Channel: 9
+690936: On, G#2, Channel: 9
+691547: Off, G#2, Channel: 9
+691663: On, G#2, Channel: 9
+692274: Off, G#2, Channel: 9
+692390: On, G#2, Channel: 9
+693001: Off, G#2, Channel: 9
+693117: On, G#2, Channel: 9
+693728: Off, G#2, Channel: 9
+693844: On, G#2, Channel: 9
+694455: Off, G#2, Channel: 9
+694571: On, G#2, Channel: 9
+695182: Off, G#2, Channel: 9
+695298: On, G#2, Channel: 9
+695909: Off, G#2, Channel: 9
+696025: On, G#2, Channel: 9
+696636: Off, G#2, Channel: 9
+696752: On, G#2, Channel: 9
+697363: Off, G#2, Channel: 9
+697479: On, G#2, Channel: 9
+698090: Off, G#2, Channel: 9
+698206: On, G#2, Channel: 9
+698817: Off, G#2, Channel: 9
+698933: On, G#2, Channel: 9
+699544: Off, G#2, Channel: 9
+699660: On, G#2, Channel: 9
+700271: Off, G#2, Channel: 9
+700387: On, G#2, Channel: 9
+700998: Off, G#2, Channel: 9
+701114: On, G#2, Channel: 9
+701725: Off, G#2, Channel: 9
+701841: On, G#2, Channel: 9
+702452: Off, G#2, Channel: 9
+702568: On, G#2, Channel: 9
+703179: Off, G#2, Channel: 9
+703295: On, G#2, Channel: 9
+703906: Off, G#2, Channel: 9
+704022: On, G#2, Channel: 9
+704633: Off, G#2, Channel: 9
+704749: On, G#2, Channel: 9
+705360: Off, G#2, Channel: 9
+705476: On, G#2, Channel: 9
+706087: Off, G#2, Channel: 9
+706203: On, G#2, Channel: 9
+706814: Off, G#2, Channel: 9
+706930: On, G#2, Channel: 9
+707541: Off, G#2, Channel: 9
+707657: On, G#2, Channel: 9
+707752: Off, C7, Channel: 3
+711215: Off, C7, Channel: 3
+714678: Off, C7, Channel: 3
+718141: Off, C7, Channel: 3
+721604: Off, C7, Channel: 3
+725067: Off, C7, Channel: 3
+728530: Off, C7, Channel: 3
+731993: Off, C7, Channel: 3
+735456: Off, C7, Channel: 3
+738919: Off, C7, Channel: 3
+742382: Off, C7, Channel: 3
+745845: Off, C7, Channel: 3
+749308: Off, C7, Channel: 3
+752771: Off, C7, Channel: 3
+756234: Off, C7, Channel: 3
+759697: Off, C7, Channel: 3
+763160: Off, C7, Channel: 3
+766623: Off, C7, Channel: 3
+770086: Off, C7, Channel: 3
+773549: Off, C7, Channel: 3
+777012: Off, C7, Channel: 3
+780475: Off, C7, Channel: 3
+783938: Off, C7, Channel: 3
+787401: Off, C7, Channel: 3
+790864: Off, C7, Channel: 3
+794327: Off, C7, Channel: 3
+797790: Off, C7, Channel: 3
+801253: Off, C7, Channel: 3
+804716: Off, C7, Channel: 3
+808179: Off, C7, Channel: 3
+811642: Off, C7, Channel: 3
+815105: Off, C7, Channel: 3
+818581: Off, C7, Channel: 3
+822440: Off, F#2, Channel: 9
+822440: On, F#2, Channel: 9
+822920: Off, F#2, Channel: 9
+822920: On, F#2, Channel: 9
+823400: Off, F#2, Channel: 9
+823400: On, A3, Channel: 9
+823495: Off, C7, Channel: 3
+827354: Off, F#2, Channel: 9
+827354: On, F#2, Channel: 9
+827834: Off, F#2, Channel: 9
+827834: On, F#2, Channel: 9
+828314: Off, F#2, Channel: 9
+828314: On, A3, Channel: 9
+828409: Off, C7, Channel: 3
+831898: Off, C7, Channel: 3
+835387: Off, C7, Channel: 3
+838876: Off, C7, Channel: 3
+842365: Off, C7, Channel: 3
+845854: Off, C7, Channel: 3
+849343: Off, C7, Channel: 3
+852832: Off, C7, Channel: 3
+856321: Off, C7, Channel: 3
+859810: Off, E8, Channel: 1
+859848: On, C2, Channel: 9
+860088: Off, A3, Channel: 9
+863520: Off, C7, Channel: 3
+867009: Off, E8, Channel: 1
+867045: On, D2, Channel: 9
+867285: Off, A3, Channel: 9
+870717: Off, C7, Channel: 3
+874206: Off, C7, Channel: 3
+877695: Off, C7, Channel: 3
+881184: Off, C7, Channel: 3
+884673: Off, C7, Channel: 3
+888162: Off, C7, Channel: 3
+891651: Off, C7, Channel: 3
+895140: Off, C7, Channel: 3
+898629: Off, C7, Channel: 3
+902118: Off, C7, Channel: 3
+905607: Off, C7, Channel: 3
+909096: Off, C7, Channel: 3
+912585: Off, C7, Channel: 3
+916074: Off, E8, Channel: 1
+916112: On, C2, Channel: 9
+916352: Off, A3, Channel: 9
+919784: Off, C7, Channel: 3
+923273: Off, E8, Channel: 1
+923309: On, D2, Channel: 9
+923549: Off, A3, Channel: 9
+926981: Off, C7, Channel: 3
+930470: Off, C7, Channel: 3
+933959: Off, C7, Channel: 3
+937448: Off, C7, Channel: 3
+940937: Off, C-1, Channel: 15

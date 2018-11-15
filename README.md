@@ -8,15 +8,26 @@ The software portion of Guitar Buddy consists of two programs: one for conversio
 
 ### Prerequisites
 
-Requires g++ compiiler to make the C++ program in the MIDI conversion program. Requires the Arduino IDE and Python 3.X for the bluetooth transmission.
+Requires:
+-- g++ compiiler to make the C++ program in the MIDI conversion program
+-- Arduino IDE and Python 3.X for bluetooth transmission
+-- MuseScore2 from Windows store to investigate MIDI channels
 
 ## Running the tests
 
 To run the MIDI conversion program, follow these instructions in the MIDI_to_Binary_Conversion directory:
 
 ```
+make "cleanwin or cleanlinux"
 make
-./MIDIToBytes "songname.mid" "songname.csv"
+./MIDIToBytes songname.mid songname.csv
+```
+
+Example:
+```
+make cleanwin
+make
+./MIDIToBytes SayItAintSo.mid SayItAintSo.csv
 ```
 
 ## Authors

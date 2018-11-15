@@ -8,8 +8,12 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "ECE445MIDIToStreamableBytes.cpp"
-            ]
+                "MIDIToBytes.cpp"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
