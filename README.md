@@ -20,7 +20,7 @@ To run the MIDI conversion program, follow these instructions in the MIDI_to_Bin
 ```
 make "cleanwin or cleanlinux"
 make
-./MIDIToBytes songname.mid songname.csv
+./MIDIToBytes songname
 ```
 
 Example:

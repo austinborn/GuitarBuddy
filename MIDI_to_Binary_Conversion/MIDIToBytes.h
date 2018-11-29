@@ -10,6 +10,8 @@
 
 void readFromFile(std::fstream& infile, char * bytebuf, int length, long &bytes_left);
 
+unsigned char peekFromFile(std::fstream& infile);
+
 std::string noteFinder(int note_num);
 
 #endif 
