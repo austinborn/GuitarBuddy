@@ -38,6 +38,7 @@
 #include <cmath>
 #include <sstream>
 #include <map>
+#include <iomanip>
 #include "MIDIToBytes.h"
 
 using namespace std;
@@ -68,7 +69,7 @@ int main(int argc, char** argv){
 
     //Open MIDI file
     fstream infile;
-    infile.open("MIDI_Files/" + string(argv[1]) + ".mid", fstream::in);
+    infile.open("MIDI_Files/" + string(argv[1]) + ".mid", fstream::in | ios::binary);
 
     //Create output file
     fstream outfile;
@@ -203,7 +204,9 @@ int main(int argc, char** argv){
             using_previous = false;
 
             do{
-
+                //outfile << status << endl;
+                outfile << std::hex << (int)status << endl;
+                //outfile << hex << setfill('0') << setw(2) << status << endl;
                 //Parse Status
                 if ((status >> 4) == 0x8) { //Note off event
                     if(!using_previous){
@@ -227,7 +230,7 @@ int main(int argc, char** argv){
                         //Debugging - outfile << int(buf[0]) << "," << int(buf[1]) << endl;
                     }
 
-                    //Get Note number (and skip velocity)
+                    //Get Note number, use velocity to tell if on or off
                     readFromFile(infile, buf, 2, bytes_left);
                     trk_bytes_left -= 2;
                     unsigned char note_num = buf[0];
@@ -235,7 +238,10 @@ int main(int argc, char** argv){
 
                     //Record in CSV
                     //Debugging - outfile << "note_num: " << int(note_num) << endl;
-                    outfile << round_time << "," << "On," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
+                    if (buf[1] != 0x00)
+                        outfile << round_time << "," << "On," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
+                    else
+                        outfile << round_time << "," << "Off," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
                     break;
                 }
 
@@ -380,11 +386,13 @@ int main(int argc, char** argv){
                 else if (status == 0xFF){ //Reset (escape for meta events)
                     if(!using_previous){
                         readFromFile(infile, buf, 1, bytes_left);
+                        outfile << (int)buf[0] << endl;
                         trk_bytes_left -= 1;
                     }
 
                     //Get meta event type
                     readFromFile(infile, buf, 1, bytes_left);
+                    outfile << (int)buf[0] << endl;
                     trk_bytes_left -= 1;
                     char meta_event_type = buf[0];
 
@@ -402,6 +410,7 @@ int main(int argc, char** argv){
                         readFromFile(infile, buf, length, bytes_left);
                         trk_bytes_left -= length;
                         outfile << round_time << ", Text event" << endl;
+                        outfile << "Length of text: " << (int)length << endl;
                     }
                     else if (meta_event_type == 0x02){ //Copyright Notice
                         readFromFile(infile, buf, length, bytes_left);
@@ -456,7 +465,7 @@ int main(int argc, char** argv){
                             tempo = (tempo << 8) | (0x00FF & buf[i]);
                         }
                         time_multiplier = tempo*byte_frame_freq*0.000001/tpq;
-                        outfile << round_time << ", Tempo to " << tempo << " usec/quarter note" << endl;
+                        outfile << round_time << ", Tempo to " << (long)tempo << " usec/quarter note" << endl;
                     }
                     else if (meta_event_type == 0x54){ //SMPTE Offset
                         readFromFile(infile, buf, length, bytes_left);
