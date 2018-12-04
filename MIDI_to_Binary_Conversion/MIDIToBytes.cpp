@@ -1,23 +1,26 @@
-/* MIDI to Streamable byte format
+/* MIDI to CSV and Streamable Binary format
  *
- * By Austin Born
+ * By Austin Born, Fall 2018
  * 
- * C++ program to convert notes in MIDI files into a
+ * C++ program to convert notes in MIDI files to a readable CSV and a 
  * compressed byte map format to send to the ESP32.
  * The byte map will contain basic header information on song name,
  * tempo, and then a sequence of frames for the entire LED array.
  * Each byte in a frame represents one fret of the guitar, so a 
- * single frame will have 10 bytes of data. If there are roughly
- * 32 frames per second, then the byte map for a 5-minute song
- * will be roughly 100 kB. 
+ * single frame will have n bytes of data where n is the number of frets. 
+ * If there are roughly 32 frames per second, then the byte map for a 
+ * 5-minute song will be ~100 kB. 
  */
 
 /*
  * Curent challenges:
+ * - Deal with songs having non-present notes
  * - Output proper header data
- * - Deal with channel numbers
- * 
- * - Last note of song
+ * - Output proper file type
+ * - Add comments
+ * - Refactor code
+ * - Update Git Repo
+ * - Find simple MIDI files to DL
  */
 
 /* About the MIDI Format:
@@ -28,6 +31,7 @@
  * <event> = <MIDI event> | <sysex event> | <meta-event>
 */
 
+//Include external libraries
 #include <unistd.h>
 #include <Windows.h>
 #include <fstream>
@@ -43,22 +47,55 @@
 
 using namespace std;
 
-//Initialize global structures
+//Initialize note and octave lists
 string notes [12] = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
-string octaves [11] = {"-1", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"};
+string octaves [11] = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
 
-map<string, int> note_map = {{"E2", 0}, {"A2", 1}, {"D3", 2}, {"G3", 3}, {"B3", 4}, {"E4", 5},
-                            {"F2", 8}, {"A#2", 9}, {"D#3", 10}, {"G#3", 11}, {"C4", 12}, {"F4", 13},
-                            {"F#2", 16}, {"B2", 17}, {"E3", 18}, {"A3", 19}, {"C#4", 20}, {"F#4", 21},
-                            {"G2", 24}, {"C3", 25}, {"F3", 26}, {"A#3", 27}, {"D4", 28}, {"G4", 29},
-                            {"G#2", 32}, {"C#3", 33}, {"F#3", 34}, {"B3", 35}, {"D#4", 36}, {"G#4", 37},
-                            {"A4", 45}, {"A#4", 53}, {"B4", 61}, {"C5", 69}, {"C#5", 77}};
+//Initialize note map for binary format
+map<string, int> note_map = {//Notes below lowest fret remapped
+                            {"C2", 25}, {"C3", 25},
+                            {"C#2", 33}, {"C#3", 33},
+                            {"D2", 41}, {"D3", 41},
+                            {"D#2", 49}, {"D#3", 49},
+                            {"E2", 18}, {"E3", 18},
+                            {"F2", 8}, 
+                            {"F#2", 16}, 
+                            {"G2", 24}, 
+                            {"G#2", 32}, 
+                            {"A2", 40}, 
+                            {"A#2", 48}, 
+                            {"B2", 17},
+            
+                            //Frets 2-7     
+                            {"F3", 8}, //Rest is empty (taken by fret 7)
+                            {"F#3", 16}, {"B3", 17}, {"E4", 18}, {"A4", 19}, {"C#5", 20}, {"F#5", 21},
+                            {"G3", 24}, {"C4", 25}, {"F4", 26}, {"A#4", 27}, {"D5", 28}, {"G5", 29},
+                            {"G#3", 32}, {"C#4", 33}, {"F#4", 34}, {"B4", 35}, {"D#5", 36}, {"G#5", 37},
+                            {"A3", 40}, {"D4", 41}, {"G4", 42}, {"C5", 43}, {"E5", 44}, {"A5", 45},
+                            {"A#3", 48}, {"D#4", 49}, {"G#4", 50}, {"C#5", 51}, {"F5", 52}, {"A#5", 53},
+
+                            //Notes above highest fret remapped
+                            {"B5", 35}, 
+                            {"C6", 43}, 
+                            {"C#6", 20}};
 
 //Other constants
 const int BUFFER_SIZE = 4;
 const int byte_frame_freq = 32;
 
 int main(int argc, char** argv){
+
+    //Input checking
+    if(argc != 3){
+        cout << "Incorrect number of arguments. Requires 2 arguments: <Song name> <note channel>" << endl;
+        return 0;
+    }
+
+    int channel_num = strtol(argv[2], NULL, 10);
+    if(channel_num < 0 || channel_num > 16){
+        cout << "Given note channel is outside total number of channels." << endl;
+        return 0;
+    }
 
     //Initializations
     char buf [BUFFER_SIZE];
@@ -69,11 +106,20 @@ int main(int argc, char** argv){
 
     //Open MIDI file
     fstream infile;
-    infile.open("MIDI_Files/" + string(argv[1]) + ".mid", fstream::in | ios::binary);
+    string infile_name = "MIDI_Files/" + string(argv[1]) + ".mid";
+    if (FILE *file = fopen(infile_name.c_str(), "r")) {
+        fclose(file);
+    } else {
+        cout << "File does not exist" << endl;
+        return false;
+    } 
+    infile.open(infile_name, fstream::in | ios::binary);
 
     //Create output file
     fstream outfile;
-    outfile.open("CSV_Files/" + string(argv[1]) + ".csv", fstream::in | fstream::out | fstream::trunc);
+    string outfile_name = "CSV_Files/" + string(argv[1]) + ".csv";
+    remove(outfile_name.c_str());
+    outfile.open(outfile_name, fstream::in | fstream::out | fstream::trunc);
 
     //Get MIDI file length
     infile.seekg(0, infile.end);
@@ -217,7 +263,7 @@ int main(int argc, char** argv){
                     unsigned char note_num = buf[0];
 
                     //Record in CSV
-                    outfile << round_time << "," << "Off," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
+                    outfile << round_time << ",Off," << noteFinder(note_num) << "," << (status & 0xF) + 1 << endl;
                     break;
                 }
                 else if ((status >> 4) == 0x9) { //Note on event
@@ -233,9 +279,9 @@ int main(int argc, char** argv){
 
                     //Record in CSV
                     if (buf[1] != 0x00)
-                        outfile << round_time << "," << "On," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
+                        outfile << round_time << ",On," << noteFinder(note_num) << "," << (status & 0xF) + 1 << endl;
                     else
-                        outfile << round_time << "," << "Off," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
+                        outfile << round_time << ",Off," << noteFinder(note_num) << "," << (status & 0xF) + 1 << endl;
                     break;
                 }
 
@@ -247,7 +293,7 @@ int main(int argc, char** argv){
                     }
                     readFromFile(infile, buf, 2, bytes_left);
                     trk_bytes_left -= 2;
-                    outfile << round_time << ", Polyphonic key pressure event" << ", Channel: " << (status & 0xF) << endl;
+                    outfile << round_time << ", Polyphonic key pressure event" << ", Channel: " << (status & 0xF) + 1 << endl;
                     break;
                 }
                 else if ((status >> 4) == 0xB){ //Control Change
@@ -257,7 +303,7 @@ int main(int argc, char** argv){
                     }
                     readFromFile(infile, buf, 2, bytes_left);
                     trk_bytes_left -= 2;
-                    outfile << round_time << ", Control change event" << ", Channel: " << (status & 0xF) << endl;
+                    outfile << round_time << ", Control change event" << ", Channel: " << (status & 0xF) + 1 << endl;
                     break;
                 }
                 else if ((status >> 4) == 0xC){ //Program Change
@@ -267,7 +313,7 @@ int main(int argc, char** argv){
                     }
                     readFromFile(infile, buf, 1, bytes_left);
                     trk_bytes_left -= 1;
-                    outfile << round_time << ", Program change event" << ", Channel: " << (status & 0xF) << endl;
+                    outfile << round_time << ", Program change event" << ", Channel: " << (status & 0xF) + 1 << endl;
                     break;
                 }
                 else if ((status >> 4) == 0xD){ //Channel Pressure
@@ -277,7 +323,7 @@ int main(int argc, char** argv){
                     }
                     readFromFile(infile, buf, 1, bytes_left);
                     trk_bytes_left -= 1;
-                    outfile << round_time << ", Channel Pressure event" << ", Channel: " << (status & 0xF) << endl;
+                    outfile << round_time << ", Channel Pressure event" << ", Channel: " << (status & 0xF) + 1 << endl;
                     break;
                 }
                 else if ((status >> 4) == 0xE){ //Pitch Wheel Change
@@ -287,7 +333,7 @@ int main(int argc, char** argv){
                     }
                     readFromFile(infile, buf, 2, bytes_left);
                     trk_bytes_left -= 2;
-                    outfile << round_time << ", Pitch wheel event" << ", Channel: " << (status & 0xF) << endl;
+                    outfile << round_time << ", Pitch wheel event" << ", Channel: " << (status & 0xF) + 1 << endl;
                     //outfile << "status:" << (status & 0xFF) << endl;
                     break;
                 }
@@ -447,7 +493,7 @@ int main(int argc, char** argv){
                     else if (meta_event_type == 0x2F){ //End of Track
                         readFromFile(infile, buf, length, bytes_left);
                         trk_bytes_left -= length;
-                        outfile << round_time << ", End of track " << endl;
+                        outfile << round_time << ",End of track" << endl;
                     }
                     else if (meta_event_type == 0x51){ //Set Tempo
                         readFromFile(infile, buf, length, bytes_left);
@@ -495,16 +541,22 @@ int main(int argc, char** argv){
     }
 
     //Convert csv to binary file
-    ofstream binfile("BIN_Files/"+string(argv[1]) + ".bin", ios::binary);
+    string binfile_name = "BIN_Files/" + string(argv[1]) + ".bin";
+    remove(binfile_name.c_str());
+    ofstream binfile(binfile_name, ios::binary);
 
     //Prepare byte_map
-    char byte_map[10];
+    int MAP_BYTES = 16;
+    char byte_map[MAP_BYTES];
     for(int i = 0; i < 10; i++)
         byte_map[i] = 0x00;
+    for(int j = 10; j < 16; j++)
+        byte_map[j] = 0xFF;
 
     string str_in;
     char * pch;
     int cur_frame, last_frame = 0;
+    bool found_channel = false;
     vector<string> str_vec;
     outfile.clear();
     outfile.seekg(0, ios::beg);
@@ -517,24 +569,31 @@ int main(int argc, char** argv){
             pch = strtok(NULL, ",");
         }
         if(str_vec.size() == 4){
-            stringstream frame_num(str_vec[0]);
-            frame_num >> cur_frame;
-            if(cur_frame != last_frame){
-                //Print byte_map (cur_frame - last_frame) times
-                for(int a = 0; a < (cur_frame - last_frame); a++)
-                    for(int i = 0; i < 10; i++)
-                        binfile.write(byte_map + i, 1);
-                last_frame = cur_frame;
+            if(str_vec[3] == argv[2]){
+                found_channel = true;
+                stringstream frame_num(str_vec[0]);
+                frame_num >> cur_frame;
+                if(cur_frame != last_frame){
+                    //Print byte_map (cur_frame - last_frame) times
+                    for(int a = 0; a < (cur_frame - last_frame); a++)
+                        for(int i = 0; i < MAP_BYTES; i++)
+                            binfile.write(byte_map + i, 1);
+                    last_frame = cur_frame;
+                }
+                //Adjust byte_map based on str_vec[2]
+                int byte_map_num = note_map[str_vec[2]];
+                unsigned char fret_bits = 0x80 >> (byte_map_num % 8);
+                int fret = byte_map_num / 8;
+                if(str_vec[1] == "On")
+                    byte_map[fret] |= fret_bits;
+                else
+                    byte_map[fret] &= ~fret_bits;
             }
-            //Adjust byte_map based on str_vec[2]
-            int byte_map_num = note_map[str_vec[2]];
-            unsigned char fret_bits = 0x80 >> (byte_map_num % 8);
-            int fret = byte_map_num / 8;
-            if(str_vec[1] == "On")
-                byte_map[fret] |= fret_bits;
-            else
-                byte_map[fret] &= ~fret_bits;
         }
+        else if(found_channel)
+            if(str_vec.size() == 2)
+                if(str_vec[1] == "End of track")
+                    break;
         while(!str_vec.empty())
             str_vec.pop_back();
     }
@@ -546,7 +605,7 @@ int main(int argc, char** argv){
 
     //Stop clock
     clock_t end = clock();
-    cout << std::fixed << "Total elapsed time: " <<  double(end - begin) / CLOCKS_PER_SEC << " seconds" << endl;
+    cout << std::fixed << "Total elapsed time: " <<  int(end - begin) << " ms" << endl;
     return 0;
 }
 
