@@ -1,7 +1,7 @@
 CC=g++
 CFLAGS=-I
 
-make: MIDIToBytes.o
+make:  MIDIToBytes.o
 	$(CC) -o MIDIToBytes MIDIToBytes.o
 
 cleanwin:

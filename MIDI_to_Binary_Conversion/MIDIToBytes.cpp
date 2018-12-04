@@ -16,7 +16,7 @@
  * Curent challenges:
  * - Output proper header data
  * - Deal with channel numbers
- * - MIDI problems: outputting wrong(?) notes at byte 33433 in HotelCalifornia.mid and stuck at end of SugarWereGoinDown.csv
+ * 
  * - Last note of song
  */
 
@@ -204,9 +204,6 @@ int main(int argc, char** argv){
             using_previous = false;
 
             do{
-                //outfile << status << endl;
-                outfile << std::hex << (int)status << endl;
-                //outfile << hex << setfill('0') << setw(2) << status << endl;
                 //Parse Status
                 if ((status >> 4) == 0x8) { //Note off event
                     if(!using_previous){
@@ -227,17 +224,14 @@ int main(int argc, char** argv){
                     if(!using_previous){
                         readFromFile(infile, buf, 1, bytes_left);
                         trk_bytes_left -= 1;
-                        //Debugging - outfile << int(buf[0]) << "," << int(buf[1]) << endl;
                     }
 
                     //Get Note number, use velocity to tell if on or off
                     readFromFile(infile, buf, 2, bytes_left);
                     trk_bytes_left -= 2;
                     unsigned char note_num = buf[0];
-                    //Debugging - outfile << int(buf[0]) << "," << int(buf[1]) << endl;
 
                     //Record in CSV
-                    //Debugging - outfile << "note_num: " << int(note_num) << endl;
                     if (buf[1] != 0x00)
                         outfile << round_time << "," << "On," << noteFinder(note_num) << ", Channel: " << (status & 0xF) << endl;
                     else
@@ -294,7 +288,7 @@ int main(int argc, char** argv){
                     readFromFile(infile, buf, 2, bytes_left);
                     trk_bytes_left -= 2;
                     outfile << round_time << ", Pitch wheel event" << ", Channel: " << (status & 0xF) << endl;
-                    outfile << "status:" << (status & 0xFF) << endl;
+                    //outfile << "status:" << (status & 0xFF) << endl;
                     break;
                 }
                 else if (status == 0xF0){ //System Exclusive
@@ -386,13 +380,11 @@ int main(int argc, char** argv){
                 else if (status == 0xFF){ //Reset (escape for meta events)
                     if(!using_previous){
                         readFromFile(infile, buf, 1, bytes_left);
-                        outfile << (int)buf[0] << endl;
                         trk_bytes_left -= 1;
                     }
 
                     //Get meta event type
                     readFromFile(infile, buf, 1, bytes_left);
-                    outfile << (int)buf[0] << endl;
                     trk_bytes_left -= 1;
                     char meta_event_type = buf[0];
 
