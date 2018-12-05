@@ -1,0 +1,119 @@
+File format - 1
+# of Tracks - 2
+Ticks/quarter note - 384
+
+Start of track 1 at Byte 14
+Track length: 19
+0, Time Signature event
+0, Tempo to 400000 usec/quarter note
+0,End of track
+
+Start of track 2 at Byte 41
+Track length: 472
+0, Sequence/Track Name event
+0, Program change event, Channel: 1
+0,On,C5,1
+0,On,E4,1
+0,On,C4,1
+13,Off,C5,1
+13,Off,E4,1
+13,Off,C4,1
+51,On,C5,1
+51,On,E4,1
+51,On,C4,1
+64,Off,C5,1
+64,Off,E4,1
+64,Off,C4,1
+102,On,C4,1
+102,On,C5,1
+102,On,E4,1
+115,Off,C5,1
+115,Off,E4,1
+115,Off,C4,1
+154,On,C5,1
+154,On,E4,1
+154,On,C4,1
+166,Off,C5,1
+166,Off,E4,1
+166,Off,C4,1
+205,On,A4,1
+205,On,C5,1
+205,On,F4,1
+205,On,C4,1
+218,Off,F4,1
+218,Off,C4,1
+218,Off,C5,1
+218,Off,A4,1
+256,On,C4,1
+256,On,E4,1
+256,On,C5,1
+269,Off,C4,1
+269,Off,C5,1
+269,Off,E4,1
+307,On,A4,1
+307,On,D5,1
+307,On,F#5,1
+320,Off,D5,1
+320,Off,A4,1
+320,Off,F#5,1
+358,On,B3,1
+358,On,G3,1
+358,On,G5,1
+358,On,D5,1
+371,Off,G3,1
+371,Off,B3,1
+371,Off,G5,1
+371,Off,D5,1
+410,On,E4,1
+410,On,C5,1
+410,On,C4,1
+422,Off,C5,1
+422,Off,C4,1
+422,Off,E4,1
+461,On,C5,1
+461,On,C4,1
+461,On,E4,1
+474,Off,C5,1
+474,Off,C4,1
+474,Off,E4,1
+512,On,C5,1
+512,On,E4,1
+512,On,C4,1
+525,Off,E4,1
+525,Off,C5,1
+525,Off,C4,1
+563,On,C5,1
+563,On,E4,1
+563,On,C4,1
+576,Off,C5,1
+576,Off,E4,1
+576,Off,C4,1
+614,On,A4,1
+614,On,C5,1
+614,On,F4,1
+614,On,C4,1
+627,Off,C5,1
+627,Off,F4,1
+627,Off,C4,1
+627,Off,A4,1
+666,On,E4,1
+666,On,C4,1
+666,On,C5,1
+678,Off,C5,1
+678,Off,E4,1
+678,Off,C4,1
+717,On,D5,1
+717,On,G5,1
+717,On,B3,1
+717,On,G3,1
+730,Off,D5,1
+730,Off,B3,1
+730,Off,G5,1
+730,Off,G3,1
+768,On,C5,1
+768,On,E4,1
+768,On,C4,1
+781,Off,C5,1
+781,Off,E4,1
+781,Off,C4,1
+781,End of track

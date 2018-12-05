@@ -1,0 +1,39 @@
+File format - 1
+# of Tracks - 2
+Ticks/quarter note - 384
+
+Start of track 1 at Byte 14
+Track length: 19
+0, Time Signature event
+0, Tempo to 545454 usec/quarter note
+0,End of track
+
+Start of track 2 at Byte 41
+Track length: 139
+0, Sequence/Track Name event
+0, Program change event, Channel: 1
+0,On,G4,1
+17,On,A#4,1
+17,Off,G4,1
+35,On,C5,1
+35,Off,A#4,1
+52,Off,C5,1
+61,On,G4,1
+70,Off,G4,1
+79,On,A#4,1
+87,Off,A#4,1
+96,On,C#5,1
+105,Off,C#5,1
+105,On,C5,1
+140,On,G4,1
+140,Off,C5,1
+157,On,A#4,1
+157,Off,G4,1
+175,On,C5,1
+175,Off,A#4,1
+192,Off,C5,1
+201,On,A#4,1
+209,Off,A#4,1
+218,On,G4,1
+262,Off,G4,1
+262,End of track
