@@ -20,14 +20,14 @@ To run the MIDI conversion program, follow these instructions in the MIDI_to_Bin
 ```
 make "cleanwin or cleanlinux"
 make
-./MIDIToBytes songname
+./MIDIToBytes songname channel_num
 ```
 
 Example:
 ```
-make cleanwin
+make cleanlinux
 make
-./MIDIToBytes SayItAintSo.mid SayItAintSo.csv
+./MIDIToBytes JingleBells 1
 ```
 
 ## Authors
