@@ -618,7 +618,7 @@ int main(int argc, char** argv){
     binfile2.close();
 
     fstream songfile;
-    string songfile_name = "SONGNAME.txt";
+    string songfile_name = string(argv[1]) + ".txt";
     songfile.open(songfile_name,  fstream::in | fstream::out | fstream::trunc);
     songfile << "{{" << charToString(file_bytes_2d[0][0]);    for(int j = 0; j < MAP_BYTES; j++)
         songfile << "," << charToString(file_bytes_2d[i][j]);
