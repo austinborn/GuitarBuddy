@@ -663,19 +663,19 @@ std::string charToString(unsigned char chari){
     std::string hex;
     int big = chari/16;
     if(big < 10)
-        hex += to_string(big);
+        hex += "0x" + to_string(big);
     else if(big == 10)
-        hex += "a";
+        hex += "0xa";
     else if(big == 11)
-        hex += "b";
+        hex += "0xb";
     else if(big == 12)
-        hex += "c";
+        hex += "0xc";
     else if(big == 13)
-        hex += "d";
+        hex += "0xd";
     else if(big == 14)
-        hex += "e";
+        hex += "0xe";
     else if(big == 15)
-        hex += "f";
+        hex += "0xf";
 
     int little = chari%16;
     if(little < 10)
