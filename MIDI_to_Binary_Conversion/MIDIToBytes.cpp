@@ -615,8 +615,15 @@ int main(int argc, char** argv){
         file_bytes_2d[i/5][i%5] = (unsigned char)file_bytes[i];
         //cout << std::hex << (int)file_bytes_2d[i/5][i%5] << " ";
     }
-
     binfile2.close();
+
+    fstream songfile;
+    string songfile_name = "SONGNAME.csv";
+    songfile.open(songfile_name,  fstream::in | fstream::out | fstream::trunc);
+    for(int i = 0; i < (last_frame)*MAP_BYTES; i++){
+        songfile << (char)file_bytes_2d[i/5][i%5];
+    }
+    songfile.close();
 
 
     //Stop clock
