@@ -610,9 +610,9 @@ int main(int argc, char** argv){
     binfile2.open(binfile2_name, fstream::in | ios::binary);
     for(int i = 0; i < (last_frame)*MAP_BYTES; i++)
         binfile2.read(&(file_bytes[i]), 1);
-    unsigned char file_bytes_2d[last_frame][MAP_BYTES];
+    unsigned char file_bytes_2d[MAP_BYTES][last_frame];
     for(int i = 0; i < (last_frame)*MAP_BYTES; i++){
-        file_bytes_2d[i/5][i%5] = (const char)file_bytes[i];
+        file_bytes_2d[i%5][i/5] = (const char)file_bytes[i];
         //cout << std::hex << (int)file_bytes_2d[i/5][i%5] << " ";
     }
     binfile2.close();
@@ -620,12 +620,13 @@ int main(int argc, char** argv){
     fstream songfile;
     string songfile_name = string(argv[1]) + ".txt";
     songfile.open(songfile_name,  fstream::in | fstream::out | fstream::trunc);
-    songfile << "{{" << charToString(file_bytes_2d[0][0]);    for(int j = 0; j < MAP_BYTES; j++)
-        songfile << "," << charToString(file_bytes_2d[i][j]);
+    songfile << "{{" << charToString(file_bytes_2d[0][0]);    
+    for(int j = 0; j < last_frame; j++)
+        songfile << "," << charToString(file_bytes_2d[0][j]);
     songfile << "}";
-    for(int i = 0; i < last_frame; i++){
+    for(int i = 0; i < MAP_BYTES; i++){
         songfile << ",{" << charToString(file_bytes_2d[i][0]);
-        for(int j = 0; j < MAP_BYTES; j++)
+        for(int j = 0; j < last_frame; j++)
             songfile << "," << charToString(file_bytes_2d[i][j]);
         songfile << "}";
         }
