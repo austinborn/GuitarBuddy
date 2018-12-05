@@ -612,17 +612,24 @@ int main(int argc, char** argv){
         binfile2.read(&(file_bytes[i]), 1);
     unsigned char file_bytes_2d[last_frame][MAP_BYTES];
     for(int i = 0; i < (last_frame)*MAP_BYTES; i++){
-        file_bytes_2d[i/5][i%5] = (unsigned char)file_bytes[i];
+        file_bytes_2d[i/5][i%5] = (const char)file_bytes[i];
         //cout << std::hex << (int)file_bytes_2d[i/5][i%5] << " ";
     }
     binfile2.close();
 
     fstream songfile;
-    string songfile_name = "SONGNAME.csv";
+    string songfile_name = "SONGNAME.txt";
     songfile.open(songfile_name,  fstream::in | fstream::out | fstream::trunc);
-    for(int i = 0; i < (last_frame)*MAP_BYTES; i++){
-        songfile << (char)file_bytes_2d[i/5][i%5];
-    }
+    songfile << "{{" << charToString(file_bytes_2d[0][0]);    for(int j = 0; j < MAP_BYTES; j++)
+        songfile << "," << charToString(file_bytes_2d[i][j]);
+    songfile << "}";
+    for(int i = 0; i < last_frame; i++){
+        songfile << ",{" << charToString(file_bytes_2d[i][0]);
+        for(int j = 0; j < MAP_BYTES; j++)
+            songfile << "," << charToString(file_bytes_2d[i][j]);
+        songfile << "}";
+        }
+    songfile << "}";
     songfile.close();
 
 
@@ -649,4 +656,41 @@ std::string noteFinder(int note_num){
     string this_note = notes[note_num % 12];
     this_note += octaves[(note_num / 12)];
     return this_note;
+}
+
+std::string charToString(unsigned char chari){
+    int charint = (int)chari;
+    std::string hex;
+    int big = chari/16;
+    if(big < 10)
+        hex += to_string(big);
+    else if(big == 10)
+        hex += "a";
+    else if(big == 11)
+        hex += "b";
+    else if(big == 12)
+        hex += "c";
+    else if(big == 13)
+        hex += "d";
+    else if(big == 14)
+        hex += "e";
+    else if(big == 15)
+        hex += "f";
+
+    int little = chari%16;
+    if(little < 10)
+        hex += to_string(little);
+    else if(little == 10)
+        hex += "a";
+    else if(little == 11)
+        hex += "b";
+    else if(little == 12)
+        hex += "c";
+    else if(little == 13)
+        hex += "d";
+    else if(little == 14)
+        hex += "e";
+    else if(little == 15)
+        hex += "f";
+    return hex;
 }

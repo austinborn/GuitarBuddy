@@ -14,4 +14,6 @@ unsigned char peekFromFile(std::fstream& infile);
 
 std::string noteFinder(int note_num);
 
+std::string charToString(unsigned char chari);
+
 #endif 
