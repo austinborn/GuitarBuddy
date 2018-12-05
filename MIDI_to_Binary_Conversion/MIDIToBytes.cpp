@@ -544,13 +544,14 @@ int main(int argc, char** argv){
     remove(binfile_name.c_str());
     ofstream binfile(binfile_name, ios::binary);
 
+    //C array frame number for Chris' use
+    int final_frame_num = 0;
+
     //Prepare byte_map
-    int MAP_BYTES = 16;
+    int MAP_BYTES = 5;
     char byte_map[MAP_BYTES];
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < MAP_BYTES; i++)
         byte_map[i] = 0x00;
-    for(int j = 10; j < 16; j++)
-        byte_map[j] = 0xFF;
 
     string str_in;
     char * pch;
@@ -582,7 +583,7 @@ int main(int argc, char** argv){
                 //Adjust byte_map based on str_vec[2]
                 int byte_map_num = note_map[str_vec[2]];
                 unsigned char fret_bits = 0x80 >> (byte_map_num % 8);
-                int fret = byte_map_num / 8;
+                int fret = (byte_map_num / 8) - 2;
                 if(str_vec[1] == "On")
                     byte_map[fret] |= fret_bits;
                 else
@@ -601,6 +602,22 @@ int main(int argc, char** argv){
     infile.close();
     outfile.close();
     binfile.close();
+
+    //C array of file for Chris' use
+    char file_bytes[(last_frame)*MAP_BYTES];
+    fstream binfile2;
+    string binfile2_name = "BIN_Files/" + string(argv[1]) + ".bin";
+    binfile2.open(binfile2_name, fstream::in | ios::binary);
+    for(int i = 0; i < (last_frame)*MAP_BYTES; i++)
+        binfile2.read(&(file_bytes[i]), 1);
+    unsigned char file_bytes_2d[last_frame][MAP_BYTES];
+    for(int i = 0; i < (last_frame)*MAP_BYTES; i++){
+        file_bytes_2d[i/5][i%5] = (unsigned char)file_bytes[i];
+        //cout << std::hex << (int)file_bytes_2d[i/5][i%5] << " ";
+    }
+
+    binfile2.close();
+
 
     //Stop clock
     clock_t end = clock();
