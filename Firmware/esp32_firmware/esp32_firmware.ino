@@ -196,7 +196,5 @@ void setup() {
 }
 
 void loop() {
-  sendByte(0xFF);
-  load();
-  Serial.println("Sent one byte!");
+  testBoards(5);
 }
