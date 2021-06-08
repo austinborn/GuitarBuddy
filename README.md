@@ -33,6 +33,7 @@ make
 ## Authors
 
 * **Austin Born** - [Batteryman212](https://github.com/Batteryman212)
+* **Chris Horn** - [Gadget212](https://github.com/Gadget212)
 
 
 ## Acknowledgments
